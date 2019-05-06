@@ -1,5 +1,5 @@
 module.exports = {
-  siteMetaData: {
+  siteMetadata: {
     title: 'Carlos Parreño: Portfolio',
     description: 'This is the project for my porftolio',
   },
@@ -7,8 +7,10 @@ module.exports = {
     `gatsby-transformer-remark`,
     {
       resolve: `gatsby-source-filesystem`,
-      name: `pages`,
-      path: `${__dirname}/src/pages`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages`,
+      },
     },
   ],
 };
