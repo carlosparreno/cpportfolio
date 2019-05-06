@@ -1,10 +1,11 @@
 import React from 'react';
 import Layout from '../components/Layout';
+import Landing from '../sections/Landing';
 
 const app = () => {
   return (
     <Layout>
-      <h1>First rendering</h1>
+      <Landing />
     </Layout>
   );
 };
