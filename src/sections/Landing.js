@@ -49,6 +49,7 @@ const LandingPage = () => (
               title
               roles
               socialLinks {
+                id
                 fontAwesomeIcon
                 name
                 url
