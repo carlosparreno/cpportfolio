@@ -17,6 +17,11 @@ socialLinks:
       url: 'https://github.com/cparreno7',
     },
     {
+      fontAwesomeIcon: 'medium',
+      name: 'Medium',
+      url: 'https://medium.com/@carlos.parreno',
+    },
+    {
       fontAwesomeIcon: 'youtube',
       name: 'Youtube Channel',
       url: 'https://www.youtube.com/channel/UC4ru-DEhHxKeGkG-R9sGiQQ',
