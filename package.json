@@ -15,6 +15,7 @@
   "dependencies": {
     "gatsby": "^2.4.2",
     "gatsby-plugin-flow": "^1.0.5",
+    "gatsby-plugin-html-attributes": "^1.0.5",
     "gatsby-source-filesystem": "^2.0.33",
     "gatsby-transformer-remark": "^2.3.12",
     "react": "^16.8.6",

@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Carlos Parreño: Portfolio',
+    title: "Carlos Parreño's portfolio",
     description: 'This is the project for my porftolio',
     profile: {
       favicon16: {
@@ -26,10 +26,16 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'pages',
-        path: `${__dirname}/src/pages`,
+        name: 'content',
+        path: `${__dirname}/src/pages/content`,
       },
     },
     'gatsby-plugin-flow',
+    {
+      resolve: 'gatsby-plugin-html-attributes',
+      options: {
+        lang: 'en',
+      },
+    },
   ],
 };
