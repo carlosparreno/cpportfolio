@@ -61,27 +61,26 @@ const LandingPage = () => (
               fontSize={[5, 6, 8]}
               mb={[3, 4, 5]}
             >
-              {`Hello, I'm ${title}!`}
+              {title}
             </Heading>
 
-            {/* <Heading
+            <Heading
               as="h2"
               color="primary"
               fontSize={[4, 5, 6]}
               mb={[3, 5]}
               textAlign="center"
             >
-            
-              <TextLoop>
+              {/* <TextLoop>
                 {roles.map(text => (
                   <Text width={[300, 500]} key={text}>
                     {text}
                   </Text>
                 ))}
-              </TextLoop>
+                </TextLoop> */}
             </Heading>
 
-             <Flex alignItems="center" justifyContent="center" flexWrap="wrap">
+            {/* <Flex alignItems="center" justifyContent="center" flexWrap="wrap">
               {socialLinks.map(({ id, ...rest }) => (
                 <Box mx={3} fontSize={[5, 6, 6]} key={id}>
                   <SocialLink {...rest} />
