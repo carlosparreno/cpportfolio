@@ -19,6 +19,11 @@ module.exports = {
         src:
           '//images.ctfassets.net/ntiequ7mc6q6/6nf3rNaaVaUqYcoAcciSeC/4433ecac61b8aa767edd9e11739bb30a/Mate_Logo.png',
       },
+      image: {
+        src:
+          '//images.ctfassets.net/ntiequ7mc6q6/6nf3rNaaVaUqYcoAcciSeC/31c775ba08e2edf3ad52438d17625b67/Mate_Logo.png?w=450&fl=progressive&q=100',
+        title: 'Carlos Parreno Logo',
+      },
     },
   },
   plugins: [
