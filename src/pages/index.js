@@ -3,6 +3,7 @@ import Layout from '../components/Layout';
 import Header from '../components/Header';
 import Landing from '../sections/Landing';
 import About from '../sections/About';
+import Projects from '../sections/Projects';
 
 const app = () => {
   return (
@@ -10,6 +11,7 @@ const app = () => {
       <Header />
       <Landing />
       <About />
+      <Projects />
     </Layout>
   );
 };
