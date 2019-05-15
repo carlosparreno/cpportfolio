@@ -4,8 +4,8 @@
   "description": "My personal portfolio",
   "version": "0.0.1",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
+    "build": "cleandir ./.cache && gatsby build",
+    "develop": "cleandir ./.cache && gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
@@ -16,6 +16,7 @@
     "gatsby": "^2.4.2",
     "gatsby-plugin-flow": "^1.0.5",
     "gatsby-plugin-html-attributes": "^1.0.5",
+    "gatsby-plugin-styled-components": "^3.0.7",
     "gatsby-source-filesystem": "^2.0.33",
     "gatsby-transformer-remark": "^2.3.12",
     "react": "^16.8.6",
@@ -32,6 +33,7 @@
     "styled-components": "^4.2.0"
   },
   "devDependencies": {
+    "clean-dir": "^1.0.3",
     "eslint": "^5.6.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^4.2.0",
