@@ -7,18 +7,19 @@ import Fade from 'react-reveal/Fade';
 import Section from '../components/Section';
 import Triangle from '../components/Triangle';
 import markdownRenderer from '../components/MarkdownRenderer';
+import Logo from '../media/ProfilePic.png';
 
 const Background = () => (
   <div>
     <Triangle
-      color="secondaryLight"
-      height={['50vh', '20vh']}
+      color="backgroundDark"
+      height={['30vh', '20vh']}
       width={['50vw', '50vw']}
       invertY
     />
 
     <Triangle
-      color="primaryDark"
+      color="secondary"
       height={['20vh', '40vh']}
       width={['75vw', '70vw']}
       invertX
@@ -47,16 +48,6 @@ const About = () => (
     <StaticQuery
       query={graphql`
         query AboutMeQuery {
-          site {
-            siteMetadata {
-              profile {
-                image {
-                  src
-                  title
-                }
-              }
-            }
-          }
           markdownRemark(frontmatter: { path: { eq: "/about" } }) {
             frontmatter {
               aboutMe
@@ -65,7 +56,6 @@ const About = () => (
         }
       `}
       render={data => {
-        const { profile } = data.site.siteMetadata;
         const { aboutMe } = data.markdownRemark.frontmatter;
 
         return (
@@ -82,8 +72,8 @@ const About = () => (
             >
               <Fade right>
                 <ProfilePicture
-                  src={profile.image.src}
-                  alt={profile.image.title}
+                  src={Logo}
+                  alt="Logo"
                   mt={[4, 4, 0]}
                   ml={[0, 0, 1]}
                 />

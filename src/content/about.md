@@ -3,5 +3,17 @@ path: '/about'
 date: '2019-05-12'
 title: 'About'
 excerpt: 'This is the about content'
-aboutMe: "Hello 👋 I'm Mate a gatsby starter which is focus on simplicity and extensibility. It's build with Gatsby(duh), and [Rebass](https://jxnblk.com/rebass/) (styled-component system). \n\nThe starter will give you 4 sections (it's really easy to add more if you want 😃):\n* [Landing:](#home) Displays a nice greeting with your name, also your roles (what you are) and all your social links.\n* [About:](#about) Show the about section where you can write about who you are, what you like to do, etc. Also you can add a photo next to it!\n* [Project:](#projects) Displays a card for all your project that you've made and also the posibility to link with github or and external link.\n* [Writting:](#writting) Take the information about your medium user and show up to 6 stories as cards with the link to Medium."
+aboutMe: "Hello 👋 I’m Carlos Parreño. I was born in Spain 🇪🇸 where I grew up. Since the age of 25 I’ve lived in Norway 🇳🇴 , Belgium 🇧🇪 and Ireland 🇮🇪 where I currently live.
+
+\n\nI’m a Software Engineer 👨🏻‍💻 with a Bachelor and Master Degree in Computer Science that I acquired between the University of Huelva (Spain) and the University of Stavanger (Norway).
+
+\n\nMy professional career started in IBM Belgium, where I had a year internship. Things went well 🎉and I moved to IBM Ireland in Dublin, where the European Technology Campus is located 🏰.
+
+\n\nI’m a passionate Front-Ender 🤟 who loves building modern and fast user interfaces, I am an ambitious learner always keen to keep up with the latest advancements. I enjoy working with tech-lovers whom I learn tones from and share my expertise with.
+
+\n\nAmong my interests are:
+
+\n\n * [Sports ⚽:](#) I played in football clubs back at home and now I play for fun, I also like yoga and swimming.
+\n\n * [Reading 📚:](#) I love books on technology, business, psychology, leadership, life-style and personal growth.
+\n\n * [Travel ✈️:](#) One of my biggest passions, I love nature ⛰ and adventure 🤠. I’ve been to 6 continents and hopefully I’ll go to Antarctica one day and fulfill my dream of being in all 7 continents."
 ---
