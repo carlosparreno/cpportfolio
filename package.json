@@ -6,9 +6,11 @@
   "scripts": {
     "build": "cleandir ./.cache && gatsby build",
     "develop": "cleandir ./.cache && gatsby develop",
+    "develop-m": "gatsby develop -H 0.0.0.0 -p 8000",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
+    "serve-m": "gatsby serve -H 0.0.0.0 -p 8000",
     "test": "echo \"Write tests!\"",
     "precommit": "NODE_ENV=production lint-staged"
   },
