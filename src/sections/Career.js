@@ -2,6 +2,9 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import Fade from 'react-reveal/Fade';
+import FontAwesome from 'react-fontawesome';
+import Timeline from '../components/Timeline/Timeline';
+import TimelineEvent from '../components/Timeline/TimelineEvent';
 import Section from '../components/Section';
 import { CardContainer } from '../components/Card';
 import Triangle from '../components/Triangle';
@@ -48,14 +51,12 @@ const Career = () => (
         query CareerQuery {
           markdownRemark(frontmatter: { path: { eq: "/career" } }) {
             frontmatter {
-              projects {
+              works {
                 id
                 name
                 description
-                projectUrl
-                repositoryUrl
-                publishedDate
-                type
+                period
+                company
                 logo {
                   title
                   src
@@ -66,15 +67,23 @@ const Career = () => (
         }
       `}
       render={data => {
-        const { projects } = data.markdownRemark.frontmatter;
+        const { works } = data.markdownRemark.frontmatter;
         return (
-          <CardContainer minWidth="350px">
-            {projects.map((p, i) => (
-              <Fade key={p.id} bottom delay={i * 200}>
-                <RoleCard {...p} />
-              </Fade>
+          <Timeline>
+            {works.map((work, index) => (
+              <TimelineEvent
+                date={work.period}
+                iconStyle={{ background: '#0D65AA', color: '#FFFFFF' }}
+                icon={<FontAwesome className="icon" name="suitcase" />}
+              >
+                <CardContainer minWidth="450px">
+                  <Fade key={work.id} bottom delay={index * 200}>
+                    <RoleCard {...work} />
+                  </Fade>
+                </CardContainer>
+              </TimelineEvent>
             ))}
-          </CardContainer>
+          </Timeline>
         );
       }}
     />

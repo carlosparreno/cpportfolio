@@ -13,7 +13,7 @@
 }
 
 .timeline::before {
-  /* this is the vertical line */
+  /* vertical line */
   content: '';
   position: absolute;
   top: 0;

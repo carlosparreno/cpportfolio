@@ -138,10 +138,7 @@
   margin-left: 60px;
   padding: 1em;
 }
-.timeline-element--no-children .timeline-element-content {
-  background: transparent;
-  box-shadow: none;
-}
+
 .timeline-element-content:after {
   content: '';
   display: table;
@@ -150,7 +147,6 @@
 .timeline-element-content h2 {
   color: #303e49;
 }
-.timeline-element-content p,
 .timeline-element-content .timeline-element-date {
   font-size: 13px;
   font-size: 0.8125rem;
@@ -159,18 +155,6 @@
 }
 .timeline-element-content .timeline-element-date {
   display: inline-block;
-}
-.timeline-element-content p {
-  margin: 1em 0 0;
-  line-height: 1.6;
-}
-
-.timeline-element-title {
-  margin: 0;
-}
-
-.timeline-element-subtitle {
-  margin: 0;
 }
 
 .timeline-element-content .timeline-element-date {
@@ -188,18 +172,8 @@
   border: 7px solid transparent;
   border-right: 7px solid white;
 }
-.timeline-element--no-children .timeline-element-content::before {
-  display: none;
-}
+
 @media only screen and (min-width: 768px) {
-  .timeline-element-content h2 {
-    font-size: 20px;
-    font-size: 1.25rem;
-  }
-  .timeline-element-content p {
-    font-size: 16px;
-    font-size: 1rem;
-  }
   .timeline-element-content .timeline-element-date {
     font-size: 14px;
     font-size: 0.875rem;
@@ -227,18 +201,12 @@
   }
 
   .timeline--two-columns
-    .timeline-element:nth-child(even):not(.timeline-element--left)
-    .timeline-element-content,
-  .timeline--two-columns
-    .timeline-element.timeline-element--right
+    .timeline-element:nth-child(even)
     .timeline-element-content {
     float: right;
   }
   .timeline--two-columns
-    .timeline-element:nth-child(even):not(.timeline-element--left)
-    .timeline-element-content::before,
-  .timeline--two-columns
-    .timeline-element.timeline-element--right
+    .timeline-element:nth-child(even)
     .timeline-element-content::before {
     top: 24px;
     left: auto;
@@ -248,11 +216,7 @@
   }
 
   .timeline--two-columns
-    .timeline-element:nth-child(even):not(.timeline-element--left)
-    .timeline-element-content
-    .timeline-element-date,
-  .timeline--two-columns
-    .timeline-element.timeline-element--right
+    .timeline-element:nth-child(even)
     .timeline-element-content
     .timeline-element-date {
     left: auto;
@@ -275,10 +239,7 @@
 @media only screen and (min-width: 1170px) {
   /* inverse bounce effect on even content blocks */
   .timeline--two-columns.timeline--animate
-    .timeline-element:nth-child(even):not(.timeline-element--left)
-    .timeline-element-content.bounce-in,
-  .timeline--two-columns.timeline--animate
-    .timeline-element.timeline-element--right
+    .timeline-element:nth-child(even)
     .timeline-element-content.bounce-in {
     -webkit-animation: cd-bounce-2-inverse 0.6s;
     -moz-animation: cd-bounce-2-inverse 0.6s;
