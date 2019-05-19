@@ -2,11 +2,10 @@
 import React from 'react';
 import { Text, Flex, Image } from 'rebass';
 import styled from 'styled-components';
+import Fade from 'react-reveal/Fade';
 import { Card } from './Card';
 
 const CARD_HEIGHT = '250px';
-
-const IMAGE_HEIGHT = '100px';
 
 const MEDIA_QUERY_SMALL = '@media (max-width: 400px)';
 
@@ -23,61 +22,54 @@ const TextContainer = styled.div`
   flex-direction: column;
   padding: 10px;
   width: 100%;
-  width: calc(100% - ${IMAGE_HEIGHT});
-
-  ${MEDIA_QUERY_SMALL} {
-    width: calc(100% - (${IMAGE_HEIGHT} / 2));
-  }
 `;
 
 const ImageContainer = styled.div`
   margin: auto;
-  width: ${IMAGE_HEIGHT};
+  width: ${CARD_HEIGHT};
 
   ${MEDIA_QUERY_SMALL} {
-    width: calc(${IMAGE_HEIGHT} / 2);
+    width: calc(${CARD_HEIGHT} / 4);
   }
 `;
 
-const TeamImage = styled(Image)`
-  width: ${IMAGE_HEIGHT};
-  height: ${IMAGE_HEIGHT};
-  padding: 12px;
-  margin-top: 0px;
+const RoleImage = styled(Image)`
+  padding: 30px;
 
   ${MEDIA_QUERY_SMALL} {
-    height: calc(${IMAGE_HEIGHT} / 2);
-    width: calc(${IMAGE_HEIGHT} / 2);
-    margin-top: calc(${IMAGE_HEIGHT} / 4);
     padding: 10px;
   }
 `;
 
 type PropTypes = {
+  id: string,
+  index: number,
   name: string,
   description: string,
   logo: { title: string, src: string },
 };
 
-const RoleCard = ({ name, description, logo }: PropTypes) => (
-  <Card p={0}>
-    <Flex style={{ height: CARD_HEIGHT }}>
-      <TextContainer>
-        <span>
-          <Title my={2} pb={1}>
-            {name}
-          </Title>
-        </span>
-        <Text width={[1]} style={{ overflow: 'auto' }}>
-          {description}
-        </Text>
-      </TextContainer>
+const RoleCard = ({ id, index, name, description, logo }: PropTypes) => (
+  <Fade key={id} bottom delay={index * 200}>
+    <Card p={0}>
+      <Flex style={{ height: CARD_HEIGHT }}>
+        <TextContainer>
+          <span>
+            <Title my={2} pb={1}>
+              {name}
+            </Title>
+          </span>
+          <Text width={[1]} style={{ overflow: 'auto' }}>
+            {description}
+          </Text>
+        </TextContainer>
 
-      <ImageContainer>
-        <TeamImage src={logo.src} alt={logo.title} />
-      </ImageContainer>
-    </Flex>
-  </Card>
+        <ImageContainer>
+          <RoleImage src={logo.src} alt={logo.title} />
+        </ImageContainer>
+      </Flex>
+    </Card>
+  </Fade>
 );
 
 export default RoleCard;

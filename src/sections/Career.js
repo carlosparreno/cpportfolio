@@ -1,14 +1,17 @@
 // @flow
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
-import Fade from 'react-reveal/Fade';
 import FontAwesome from 'react-fontawesome';
 import Timeline from '../components/Timeline/Timeline';
 import TimelineEvent from '../components/Timeline/TimelineEvent';
 import Section from '../components/Section';
-import { CardContainer } from '../components/Card';
 import Triangle from '../components/Triangle';
 import RoleCard from '../components/RoleCard';
+
+const iconStyle = {
+  background: '#0D65AA', // primaryLight
+  color: '#FFFFFF', // background
+};
 
 const Background = () => (
   <div>
@@ -73,14 +76,10 @@ const Career = () => (
             {works.map((work, index) => (
               <TimelineEvent
                 date={work.period}
-                iconStyle={{ background: '#0D65AA', color: '#FFFFFF' }}
+                iconStyle={iconStyle}
                 icon={<FontAwesome className="icon" name="suitcase" />}
               >
-                <CardContainer minWidth="450px">
-                  <Fade key={work.id} bottom delay={index * 200}>
-                    <RoleCard {...work} />
-                  </Fade>
-                </CardContainer>
+                <RoleCard index={index} {...work} />
               </TimelineEvent>
             ))}
           </Timeline>

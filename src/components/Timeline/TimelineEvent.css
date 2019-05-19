@@ -134,7 +134,6 @@
 }
 .timeline-element-content {
   position: relative;
-  width: 45% !important;
   margin-left: 60px;
   padding: 1em;
 }
@@ -143,9 +142,6 @@
   content: '';
   display: table;
   clear: both;
-}
-.timeline-element-content h2 {
-  color: #303e49;
 }
 .timeline-element-content .timeline-element-date {
   font-size: 13px;
@@ -183,7 +179,8 @@
   .timeline--two-columns .timeline-element-content {
     margin-left: 0;
     padding: 1.5em;
-    width: 40%;
+    right: 5%;
+    width: 50% !important;
   }
   .timeline--two-columns .timeline-element-content::before {
     top: 24px;
@@ -204,6 +201,7 @@
     .timeline-element:nth-child(even)
     .timeline-element-content {
     float: right;
+    left: 5%;
   }
   .timeline--two-columns
     .timeline-element:nth-child(even)
