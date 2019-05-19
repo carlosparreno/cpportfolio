@@ -14,8 +14,7 @@ const Helmet = ({ theme = {} }: PropTypes) => (
         site {
           siteMetadata {
             title
-            description    
-            }
+            description
           }
         }
       }

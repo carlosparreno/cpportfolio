@@ -32,7 +32,7 @@ works:
     {
       id: 'ibm-smart-cloud-notes',
       name: 'Software Engineer',
-      description: "### IBM Sametime Webchat
+      description: "### IBM Smart Cloud Notes
         \n\n **Company:** IBM Ireland
         \n\n **Purpose:** Creating of monitoring tools for the core systems of IBM e-mail Cloud.
         \n\n **Java** | **Spring** | **C++** | **Junit** | **New Relic**",
@@ -41,18 +41,10 @@ works:
       company: 'IBM Dublin',
       logo: { title: 'ibm smartcloud image', src: '/ibm-smart-cloud.jpg' },
     },
-    {
-      id: 'ibm-xpages',
-      name: 'Software Engineer',
-      description: "### IBM Sametime Webchat
+    { id: 'ibm-xpages', name: 'Software Engineer', description: "### IBM XPages
         \n\n **Company:** IBM Ireland
         \n\n **Purpose:** Provide a component-oriented rapid web development framework that allows data from IBM Notes and Relational Databases to be displayed to browser on all platforms.
-        \n\n **JS** | **Java** | **CSS** | **Dojo**",
-      period: 'November 2013 - February 2014',
-      type: 'work',
-      company: 'IBM Dublin',
-      logo: { title: 'ibm xpages image', src: '/ibm-logo.jpg' },
-    },
+        \n\n **JS** | **Java** | **CSS** | **Dojo**", period: 'November 2013 - February 2014', type: 'work', company: 'IBM Dublin', logo: { title: 'ibm xpages image', src: '/ibm-logo.jpg' } },
     {
       id: 'ibm-brussels',
       name: 'Developer Intern',
