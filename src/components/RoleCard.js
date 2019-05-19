@@ -3,16 +3,17 @@ import React from 'react';
 import { Text, Flex, Image } from 'rebass';
 import styled from 'styled-components';
 import Fade from 'react-reveal/Fade';
+import ReactMarkdown from 'react-markdown';
+import markdownRenderer from './MarkdownRenderer';
 import { Card } from './Card';
 
-const CARD_HEIGHT = '250px';
+const CARD_HEIGHT = '300px';
 
 const MEDIA_QUERY_SMALL = '@media (max-width: 400px)';
 
 const Title = styled(Text)`
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
-  text-transform: uppercase;
   display: table;
   border-bottom: ${props => props.theme.colors.primary} 5px solid;
 `;
@@ -25,6 +26,7 @@ const TextContainer = styled.div`
 `;
 
 const ImageContainer = styled.div`
+  border-radius: 25px;
   margin: auto;
   width: ${CARD_HEIGHT};
 
@@ -60,7 +62,7 @@ const RoleCard = ({ id, index, name, description, logo }: PropTypes) => (
             </Title>
           </span>
           <Text width={[1]} style={{ overflow: 'auto' }}>
-            {description}
+            <ReactMarkdown source={description} renderers={markdownRenderer} />
           </Text>
         </TextContainer>
 
