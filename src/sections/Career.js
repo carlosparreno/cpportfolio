@@ -8,8 +8,13 @@ import Section from '../components/Section';
 import Triangle from '../components/Triangle';
 import RoleCard from '../components/RoleCard';
 
-const iconStyle = {
+const iconWorkStyle = {
   background: '#0D65AA', // primaryLight
+  color: '#FFFFFF', // background
+};
+
+const iconSchoolStyle = {
+  background: '#FE3B0A', // primaryLight
   color: '#FFFFFF', // background
 };
 
@@ -59,6 +64,7 @@ const Career = () => (
                 name
                 description
                 period
+                type
                 company
                 logo {
                   title
@@ -76,8 +82,15 @@ const Career = () => (
             {works.map((work, index) => (
               <TimelineEvent
                 date={work.period}
-                iconStyle={iconStyle}
-                icon={<FontAwesome className="icon" name="suitcase" />}
+                iconStyle={
+                  work.type === 'work' ? iconWorkStyle : iconSchoolStyle
+                }
+                icon={
+                  <FontAwesome
+                    className="icon"
+                    name={work.type === 'work' ? 'suitcase' : 'graduation-cap'}
+                  />
+                }
               >
                 <RoleCard index={index} {...work} />
               </TimelineEvent>

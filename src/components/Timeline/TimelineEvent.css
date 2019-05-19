@@ -146,7 +146,7 @@
 .timeline-element-content .timeline-element-date {
   font-size: 20px !important;
   font-weight: bold;
-  color: #000;
+  color: #062f4f;
 }
 .timeline-element-content .timeline-element-date {
   display: inline-block;
@@ -365,4 +365,9 @@
     -o-transform: translateX(0);
     transform: translateX(0);
   }
+}
+
+.fa-mortar-board:before,
+.fa-graduation-cap:before {
+  margin-left: -2px !important;
 }
