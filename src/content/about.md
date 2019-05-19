@@ -3,7 +3,7 @@ path: '/about'
 date: '2019-05-12'
 title: 'About'
 excerpt: 'This is the about content'
-aboutMe: "Hello 👋 I’m Carlos Parreño. I was born in Spain 🇪🇸 where I grew up. Since the age of 25 I’ve lived in Norway 🇳🇴 , Belgium 🇧🇪 and Ireland 🇮🇪 where I currently live.
+aboutMe: "Hello 👋 I’m Carlos Parreño. I was born in Spain 🇪🇸 where I grew up. Since the age of 25 I’ve lived in Norway 🇳🇴 , Belgium 🇧🇪 and Ireland 🇮🇪 currently.
 
 \n\nI’m a Software Engineer 👨🏻‍💻 with a Bachelor and Master Degree in Computer Science that I acquired between the University of Huelva (Spain) and the University of Stavanger (Norway).
 
