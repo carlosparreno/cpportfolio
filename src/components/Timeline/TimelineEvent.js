@@ -18,7 +18,7 @@ type State = {
   visible: boolean,
 };
 
-class VerticalTimelineElement extends React.Component<PropTypes, State> {
+class TimelineEvent extends React.Component<PropTypes, State> {
   static defaultProps = {
     iconOnClick: () => {},
     style: undefined,
@@ -82,4 +82,4 @@ class VerticalTimelineElement extends React.Component<PropTypes, State> {
   }
 }
 
-export default VerticalTimelineElement;
+export default TimelineEvent;
