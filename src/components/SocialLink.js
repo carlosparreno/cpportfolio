@@ -21,7 +21,11 @@ type PropTypes = {
 
 const SocialLink = ({ fontAwesomeIcon, name, url }: PropTypes) => (
   <Tooltip title={name} position="bottom" trigger="mouseenter">
-    <IconLink href={url} target="_blank">
+    <IconLink
+      href={url}
+      title={`${fontAwesomeIcon} account link`}
+      target="_blank"
+    >
       <FontAwesome name={fontAwesomeIcon} />
     </IconLink>
   </Tooltip>
