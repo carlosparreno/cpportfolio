@@ -28,7 +28,7 @@ const Background = () => (
 
 const Projects = () => (
   <Section.Container id="projects" Background={Background}>
-    <Section.Header name="Projects" icon="💻" Box="notebook" />
+    <Section.Header name="Projects" icon="💻" label="Projects" Box="notebook" />
     <StaticQuery
       query={graphql`
         query ProjectsQuery {

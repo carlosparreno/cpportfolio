@@ -53,7 +53,12 @@ const Background = () => (
 
 const Career = () => (
   <Section.Container id="career" Background={Background}>
-    <Section.Header name="Profesional Career" icon="👨🏻‍💻" Box="notebook" />
+    <Section.Header
+      name="Profesional Career"
+      icon="👨🏻‍💻"
+      label="Profesional Carrer"
+      Box="notebook"
+    />
     <StaticQuery
       query={graphql`
         query CareerQuery {
@@ -81,6 +86,7 @@ const Career = () => (
           <Timeline>
             {works.map((work, index) => (
               <TimelineEvent
+                key={work.id}
                 date={work.period}
                 iconStyle={
                   work.type === 'work' ? iconWorkStyle : iconSchoolStyle
