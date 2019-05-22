@@ -25,6 +25,7 @@ const SocialLink = ({ fontAwesomeIcon, name, url }: PropTypes) => (
       href={url}
       title={`${fontAwesomeIcon} account link`}
       target="_blank"
+      rel="noopener"
     >
       <FontAwesome name={fontAwesomeIcon} />
     </IconLink>
