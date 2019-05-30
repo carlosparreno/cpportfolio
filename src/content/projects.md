@@ -2,7 +2,7 @@
 path: '/projects'
 date: '2019-05-14'
 title: 'Projects'
-excerpt: 'These are the most relevant project in my profesional career'
+excerpt: 'These are the most relevant project in my professional career'
 projects:
   [
     {
