@@ -24,6 +24,7 @@
     "gatsby-plugin-styled-components": "^3.0.7",
     "gatsby-source-filesystem": "^2.0.36",
     "gatsby-transformer-remark": "^2.3.12",
+    "lodash.find": "^4.6.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-fontawesome": "^1.6.1",

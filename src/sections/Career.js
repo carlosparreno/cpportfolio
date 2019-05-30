@@ -54,9 +54,9 @@ const Background = () => (
 const Career = () => (
   <Section.Container id="career" Background={Background}>
     <Section.Header
-      name="Profesional Career"
+      name="Professional Career"
       icon="👨🏻‍💻"
-      label="Profesional Carrer"
+      label="Professional Carrer"
       Box="notebook"
     />
     <StaticQuery
