@@ -10,7 +10,7 @@ projects:
       name: 'Wifisim Extension',
       description: 'The Wireless Fidelity Simulator (WiFiSim) Extension, designed to plan, optimise and deploy Wireless communications',
       projectUrl: 'http://www.uhu.es/tomas.mateo/wifisim/wifisim.htm',
-      repositoryUrl: 'https://github.com/cparreno7/master-thesis-wifisim-extension',
+      repositoryUrl: 'https://github.com/carlosparreno/master-thesis-wifisim-extension',
       publishedDate: '2012',
       type: 'Master Thesis',
       logo: { title: 'wifisim extension image', src: '/wifisim-extension.jpg' },
