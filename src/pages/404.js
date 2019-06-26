@@ -36,8 +36,6 @@ const Background = () => (
 );
 
 const Page404 = ({ intl }: PropTypes) => {
-  console.log(intl);
-
   return (
     <Layout>
       <Section.Container id="404" Background={Background}>
