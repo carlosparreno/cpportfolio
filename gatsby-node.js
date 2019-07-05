@@ -17,21 +17,18 @@ exports.createPages = ({ graphql, actions }) => {
           }
         `
       ).then(result => {
-        console.log('vamessssssssss:', result.data.markdownRemark.frontmatter);
-
         if (result.errors) {
           reject(result.errors);
         }
-        console.log('Siiii');
 
         // Create pages for each markdown file.
         createPage({
-          path: `/es`,
+          path: `/test`,
           component: componentPath,
           // In your blog post template's graphql query, you can use path
           // as a GraphQL variable to query for data from the markdown file.
           context: {
-            carlos: 'yesssss',
+            aboutMe: result.data.markdownRemark.frontmatter.aboutMe,
           },
         });
       })
