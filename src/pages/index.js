@@ -1,6 +1,5 @@
 // @flow
 import React from 'react';
-import IntlApp from '../components/IntlApp';
 import Layout from '../components/Layout';
 import Header from '../components/Header';
 import Landing from '../sections/Landing';
@@ -9,18 +8,18 @@ import Projects from '../sections/Projects';
 import Career from '../sections/Career';
 import Footer from '../components/Footer';
 
-const app = () => {
+const app = (props: Object) => {
+  /* eslint-disable-next-line */
+  console.log(props);
   return (
-    <IntlApp>
-      <Layout>
-        <Header />
-        <Landing />
-        <About />
-        <Career />
-        <Projects />
-        <Footer />
-      </Layout>
-    </IntlApp>
+    <Layout>
+      <Header />
+      <Landing />
+      <About />
+      <Career />
+      <Projects />
+      <Footer />
+    </Layout>
   );
 };
 export default app;

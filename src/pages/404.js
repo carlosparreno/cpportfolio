@@ -1,14 +1,10 @@
 // @flow
 import React from 'react';
-import { injectIntl, intlShape } from 'gatsby-plugin-intl';
+// import { injectIntl, intlShape } from 'gatsby-plugin-intl';
 import { Heading, Box } from 'rebass';
 import Layout from '../components/Layout';
 import Section from '../components/Section';
 import Triangle from '../components/Triangle';
-
-type PropTypes = {
-  intl: intlShape,
-};
 
 const Background = () => (
   <div>
@@ -35,16 +31,16 @@ const Background = () => (
   </div>
 );
 
-const Page404 = ({ intl }: PropTypes) => {
+const Page404 = () => {
   return (
     <Layout>
       <Section.Container id="404" Background={Background}>
         <Box width={[320, 400, 600]} m="auto">
           <Heading color="primaryDark" fontSize={['9rem', '13rem', '16rem']}>
-            {intl.formatMessage({ id: '404title' })}
+            404
           </Heading>
           <Heading color="secondary" fontSize={['4rem', '5rem', '6rem']}>
-            {intl.formatMessage({ id: '404message' })}
+            {"It seems that there isn't anything here"}
           </Heading>
         </Box>
       </Section.Container>
@@ -52,4 +48,4 @@ const Page404 = ({ intl }: PropTypes) => {
   );
 };
 
-export default injectIntl(Page404);
+export default Page404;
