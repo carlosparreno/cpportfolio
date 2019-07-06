@@ -9,13 +9,16 @@ import Career from '../sections/Career';
 import Footer from '../components/Footer';
 
 const app = (props: Object) => {
+  const { pageContext } = props;
+
   /* eslint-disable-next-line */
   console.log(props);
+
   return (
     <Layout>
       <Header />
       <Landing />
-      <About />
+      <About aboutMe={pageContext.aboutMe} />
       <Career />
       <Projects />
       <Footer />

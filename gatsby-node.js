@@ -1,37 +1,100 @@
-const path = require('path');
+const _path = require('path');
+
+const supportedLanguages = {
+  en: 'English',
+  es: 'Español',
+};
 
 exports.createPages = ({ graphql, actions }) => {
-  const { createPage } = actions;
-
-  return new Promise((resolve, reject) => {
-    const componentPath = path.resolve(`src/pages/index.js`);
-    resolve(
-      graphql(
-        `
-          {
-            markdownRemark(frontmatter: { path: { eq: "/about" } }) {
-              frontmatter {
-                aboutMe
+  // Create index pages for all supported languages
+  Object.keys(supportedLanguages).forEach(lang => {
+    return new Promise((resolve, reject) => {
+      const { createPage } = actions;
+      const componentPath = _path.resolve(`src/pages/index.js`);
+      resolve(
+        graphql(
+          `
+            {
+              allMarkdownRemark {
+                edges {
+                  node {
+                    frontmatter {
+                      path
+                      title
+                      roles
+                      socialLinks {
+                        id
+                        fontAwesomeIcon
+                        name
+                        url
+                        enabled
+                      }
+                      aboutMe
+                      works {
+                        id
+                        name
+                        description
+                        period
+                        type
+                        company
+                        logo {
+                          title
+                          src
+                        }
+                      }
+                      projects {
+                        name
+                        description
+                        projectUrl
+                        repositoryUrl
+                        publishedDate
+                        type
+                        logo {
+                          title
+                          src
+                        }
+                      }
+                    }
+                  }
+                }
               }
             }
+          `
+        ).then(result => {
+          if (result.errors) {
+            reject(result.errors);
           }
-        `
-      ).then(result => {
-        if (result.errors) {
-          reject(result.errors);
-        }
 
-        // Create pages for each markdown file.
-        createPage({
-          path: `/test`,
-          component: componentPath,
-          // In your blog post template's graphql query, you can use path
-          // as a GraphQL variable to query for data from the markdown file.
-          context: {
-            aboutMe: result.data.markdownRemark.frontmatter.aboutMe,
-          },
-        });
-      })
-    );
+          const { edges } = result.data.allMarkdownRemark;
+
+          const landing = 'landing';
+          let getAboutMe = 'aboutMe';
+          const work = 'work';
+          const projects = 'projects';
+
+          edges.forEach(edge => {
+            const { path, aboutMe } = edge.node.frontmatter;
+            console.log('path: ', path, `/${lang}/about`);
+            if (path === `/${lang}/about`) {
+              getAboutMe = aboutMe;
+            }
+          });
+
+          // TODO Ensure that you return a Promise from createPages and are awaiting any asynchronous method invocations (like graphql or http requests).
+          // TODO Fix issue with creating english '/en' as '/'
+          createPage({
+            path: lang === 'en' ? '/en' : `/${lang}/`,
+            component: componentPath,
+            context: {
+              edges,
+              landing,
+              aboutMe: getAboutMe,
+              work,
+              projects,
+            },
+          });
+        })
+      );
+    });
   });
 };
