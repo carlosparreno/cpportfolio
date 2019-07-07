@@ -8,12 +8,16 @@ import Projects from '../sections/Projects';
 import Career from '../sections/Career';
 import Footer from '../components/Footer';
 
-const app = (props: Object) => {
+const App = (props: Object) => {
   const { pageContext } = props;
+
+  if (window.location.pathname === '/' && navigator.language.startsWith('es')) {
+    window.location.href = `${window.location.origin}/es`;
+    return null;
+  }
 
   /* eslint-disable-next-line */
   console.log(props);
-
   return (
     <Layout>
       <Header />
@@ -25,4 +29,4 @@ const app = (props: Object) => {
     </Layout>
   );
 };
-export default app;
+export default App;

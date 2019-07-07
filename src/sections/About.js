@@ -1,5 +1,4 @@
 // @flow
-
 import React from 'react';
 import { Box, Image, Flex } from 'rebass';
 import styled from 'styled-components';

@@ -6,11 +6,11 @@ const supportedLanguages = {
 };
 
 exports.createPages = ({ graphql, actions }) => {
-  // Create index pages for all supported languages
+  // Create a index page for each supported language
   Object.keys(supportedLanguages).forEach(lang => {
     return new Promise((resolve, reject) => {
       const { createPage } = actions;
-      const componentPath = _path.resolve(`src/pages/index.js`);
+      const componentPath = _path.resolve(`src/templates/App.js`);
       resolve(
         graphql(
           `
@@ -74,7 +74,6 @@ exports.createPages = ({ graphql, actions }) => {
 
           edges.forEach(edge => {
             const { path, aboutMe } = edge.node.frontmatter;
-            console.log('path: ', path, `/${lang}/about`);
             if (path === `/${lang}/about`) {
               getAboutMe = aboutMe;
             }
@@ -83,7 +82,7 @@ exports.createPages = ({ graphql, actions }) => {
           // TODO Ensure that you return a Promise from createPages and are awaiting any asynchronous method invocations (like graphql or http requests).
           // TODO Fix issue with creating english '/en' as '/'
           createPage({
-            path: lang === 'en' ? '/en' : `/${lang}/`,
+            path: lang === 'en' ? '/' : `/${lang}`,
             component: componentPath,
             context: {
               edges,
