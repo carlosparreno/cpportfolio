@@ -42,9 +42,11 @@ const ProfilePicture = styled(Image)`
   }
 `;
 
-const About = (props: Object) => {
-  const { aboutMe } = props;
+type PropTypes = {
+  aboutMe: string,
+};
 
+const About = ({ aboutMe }: PropTypes) => {
   return (
     <Section.Container id="about" Background={Background}>
       <Section.Header name="About me" icon="🙋‍♂️" label="person" />

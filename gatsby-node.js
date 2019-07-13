@@ -10,7 +10,7 @@ exports.createPages = ({ graphql, actions }) => {
   return new Promise((resolve, reject) => {
     Object.keys(supportedLanguages).forEach(lang => {
       const { createPage } = actions;
-      const componentPath = _path.resolve(`src/templates/App.js`);
+      const componentPath = _path.resolve(`src/App.js`);
       resolve(
         graphql(
           `
@@ -67,15 +67,31 @@ exports.createPages = ({ graphql, actions }) => {
 
           const { edges } = result.data.allMarkdownRemark;
 
-          const landing = 'landing';
-          let getAboutMe = 'aboutMe';
+          let getLanding;
+          let getAboutMe;
           const work = 'work';
           const projects = 'projects';
 
           edges.forEach(edge => {
-            const { path, aboutMe } = edge.node.frontmatter;
-            if (path === `/${lang}/about`) {
-              getAboutMe = aboutMe;
+            const {
+              path,
+              title,
+              roles,
+              socialLinks,
+              aboutMe,
+            } = edge.node.frontmatter;
+
+            switch (path) {
+              case `/${lang}`:
+                getLanding = { title, roles, socialLinks };
+                break;
+
+              case `/${lang}/about`:
+                getAboutMe = aboutMe;
+                break;
+
+              default:
+                break;
             }
           });
 
@@ -84,7 +100,7 @@ exports.createPages = ({ graphql, actions }) => {
             component: componentPath,
             context: {
               edges,
-              landing,
+              landing: { ...getLanding },
               aboutMe: getAboutMe,
               work,
               projects,

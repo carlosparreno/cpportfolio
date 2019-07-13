@@ -2,13 +2,13 @@
 path: '/es'
 date: '2019-05-11'
 title: 'Carlos Parreño'
-excerpt: 'This is the project for my porftolio'
+excerpt: 'Este es el proyecto de mi porftolio'
 roles:
   [
-    'Software Engineer 👨🏻‍💻',
-    'In Watson Health at IBM 💙',
-    'From Spain 🇪🇸',
-    'Living in Dublin 🇮🇪',
+    'Ingeniero de Software 👨🏻‍💻',
+    'En IBM Watson Health 💙',
+    'De España 🇪🇸',
+    'Viviendo en Dublin 🇮🇪',
   ]
 socialLinks:
   [
