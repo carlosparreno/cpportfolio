@@ -1,5 +1,5 @@
 ---
-path: '/'
+path: '/en'
 date: '2019-05-11'
 title: 'Carlos Parreño'
 excerpt: 'This is the project for my porftolio'
