@@ -23,7 +23,7 @@ socialLinks:
       id: 'sociallink-github',
       fontAwesomeIcon: 'github',
       name: 'GitHub',
-      url: 'https://github.com/cparreno7',
+      url: 'https://github.com/carlosparreno',
       enabled: true,
     },
     {
