@@ -7,8 +7,8 @@ const supportedLanguages = {
 
 exports.createPages = ({ graphql, actions }) => {
   // Create a index page for each supported language
-  Object.keys(supportedLanguages).forEach(lang => {
-    return new Promise((resolve, reject) => {
+  return new Promise((resolve, reject) => {
+    Object.keys(supportedLanguages).forEach(lang => {
       const { createPage } = actions;
       const componentPath = _path.resolve(`src/templates/App.js`);
       resolve(
@@ -79,8 +79,6 @@ exports.createPages = ({ graphql, actions }) => {
             }
           });
 
-          // TODO Ensure that you return a Promise from createPages and are awaiting any asynchronous method invocations (like graphql or http requests).
-          // TODO Fix issue with creating english '/en' as '/'
           createPage({
             path: lang === 'en' ? '/' : `/${lang}`,
             component: componentPath,

@@ -42,7 +42,7 @@ const ProfilePicture = styled(Image)`
   }
 `;
 
-const About = props => {
+const About = (props: Object) => {
   const { aboutMe } = props;
 
   return (
