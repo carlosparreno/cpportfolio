@@ -50,6 +50,8 @@ exports.createPages = ({ graphql, actions }) => {
                         title
                         src
                       }
+                      githubHint
+                      webHint
                     }
                   }
                 }

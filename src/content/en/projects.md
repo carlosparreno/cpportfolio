@@ -14,6 +14,8 @@ projects:
       publishedDate: '2012',
       type: 'Master Thesis',
       logo: { title: 'wifisim extension image', src: '/wifisim-extension.jpg' },
+      githubHint: 'Check the repository',
+      webHint: "See the project's web",
     },
   ]
 ---

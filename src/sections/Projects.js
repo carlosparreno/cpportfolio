@@ -40,6 +40,8 @@ type PropTypes = {
         title: string,
         src: string,
       },
+      githubHint: string,
+      webHint: string,
     }>,
   },
 };

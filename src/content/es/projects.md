@@ -14,6 +14,8 @@ projects:
       publishedDate: '2012',
       type: 'Tesis - Proyecto Final Carrera',
       logo: { title: 'wifisim extension image', src: '/wifisim-extension.jpg' },
+      githubHint: 'Revisa el repositorio',
+      webHint: 'Mira la web del proyecto',
     },
   ]
 ---

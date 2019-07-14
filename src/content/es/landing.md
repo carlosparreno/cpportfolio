@@ -36,7 +36,7 @@ socialLinks:
     {
       id: 'sociallink-youtube',
       fontAwesomeIcon: 'youtube',
-      name: 'Youtube Channel',
+      name: 'Canal Youtube',
       url: 'https://www.youtube.com/channel/UC4ru-DEhHxKeGkG-R9sGiQQ',
       enabled: true,
     },
