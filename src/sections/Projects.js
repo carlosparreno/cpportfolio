@@ -26,26 +26,34 @@ const Background = () => (
 );
 
 type PropTypes = {
-  projects: Array<{
-    id: string,
-    name: string,
-    description: string,
-    projectUrl: string,
-    repositoryUrl: string,
-    publishedDate: string,
-    type: string,
-    logo: {
-      title: string,
-      src: string,
-    },
-  }>,
+  allProjects: {
+    title: string,
+    projects: Array<{
+      id: string,
+      name: string,
+      description: string,
+      projectUrl: string,
+      repositoryUrl: string,
+      publishedDate: string,
+      type: string,
+      logo: {
+        title: string,
+        src: string,
+      },
+    }>,
+  },
 };
 
-const Projects = ({ projects }: PropTypes) => (
+const Projects = ({ allProjects }: PropTypes) => (
   <Section.Container id="projects" Background={Background}>
-    <Section.Header name="Projects" icon="💻" label="Projects" Box="notebook" />
+    <Section.Header
+      name={allProjects.title}
+      icon="💻"
+      label="Projects"
+      Box="notebook"
+    />
     <CardContainer minWidth="350px">
-      {projects.map((project, index) => (
+      {allProjects.projects.map((project, index) => (
         <Fade key={project.id} bottom delay={index * 200}>
           <ProjectCard {...project} />
         </Fade>

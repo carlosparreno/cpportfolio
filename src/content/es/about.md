@@ -1,8 +1,8 @@
 ---
 path: '/es/about'
 date: '2019-05-12'
-title: 'About'
-excerpt: 'This is the about content'
+title: 'Acerca de mí'
+excerpt: 'Este es el contenido sobre mí'
 aboutMe: "Hola 👋 soy Carlos Parreño. Nací en España 🇪🇸 donde me crié. Desde los 25 años he vivido en Noruega 🇳🇴 , Bélgica 🇧🇪 y actualmente en Irlanda 🇮🇪.
 
 \n\nSoy Ingeniero de Software 👨🏻‍💻 con una Ingeniería Técnica y Superior en Informatica que adquirí en la Universidad de Huelva (España) y la Universidad de Stavanger (Noruega).

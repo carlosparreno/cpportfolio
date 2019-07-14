@@ -10,15 +10,15 @@ import Footer from './components/Footer';
 
 type PropTypes = {
   pageContext: {
-    aboutMe: string,
+    about: Object,
     landing: Object,
-    works: Array<Object>,
-    projects: Array<Object>,
+    career: Object,
+    allProjects: Object,
   },
 };
 
 const App = ({ pageContext }: PropTypes) => {
-  const { aboutMe, landing, works, projects } = pageContext;
+  const { about, landing, career, allProjects } = pageContext;
 
   if (window.location.pathname === '/' && navigator.language.startsWith('es')) {
     window.location.href = `${window.location.origin}/es`;
@@ -31,9 +31,9 @@ const App = ({ pageContext }: PropTypes) => {
     <Layout>
       <Header />
       <Landing landing={landing} />
-      <About aboutMe={aboutMe} />
-      <Career works={works} />
-      <Projects projects={projects} />
+      <About about={about} />
+      <Career career={career} />
+      <Projects allProjects={allProjects} />
       <Footer />
     </Layout>
   );

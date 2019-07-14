@@ -43,17 +43,20 @@ const ProfilePicture = styled(Image)`
 `;
 
 type PropTypes = {
-  aboutMe: string,
+  about: {
+    title: string,
+    aboutMe: string,
+  },
 };
 
-const About = ({ aboutMe }: PropTypes) => (
+const About = ({ about }: PropTypes) => (
   <Section.Container id="about" Background={Background}>
-    <Section.Header name="About me" icon="🙋‍♂️" label="person" />
+    <Section.Header name={about.title} icon="🙋‍♂️" label="person" />
 
     <Flex justifyContent="center" alignItems="center" flexWrap="wrap">
       <Box width={[1, 1, 4 / 6]} px={[1, 2, 4]}>
         <Fade bottom>
-          <ReactMarkdown source={aboutMe} renderers={markdownRenderer} />
+          <ReactMarkdown source={about.aboutMe} renderers={markdownRenderer} />
         </Fade>
       </Box>
 

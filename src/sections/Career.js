@@ -51,30 +51,33 @@ const Background = () => (
 );
 
 type PropTypes = {
-  works: Array<{
-    id: string,
-    name: string,
-    description: string,
-    period: string,
-    type: string,
-    company: string,
-    logo: {
-      title: string,
-      src: string,
-    },
-  }>,
+  career: {
+    title: string,
+    works: Array<{
+      id: string,
+      name: string,
+      description: string,
+      period: string,
+      type: string,
+      company: string,
+      logo: {
+        title: string,
+        src: string,
+      },
+    }>,
+  },
 };
 
-const Career = ({ works }: PropTypes) => (
+const Career = ({ career }: PropTypes) => (
   <Section.Container id="career" Background={Background}>
     <Section.Header
-      name="Professional Career"
+      name={career.title}
       icon="👨🏻‍💻"
       label="Professional Carrer"
       Box="notebook"
     />
     <Timeline>
-      {works.map((work, index) => (
+      {career.works.map((work, index) => (
         <TimelineEvent
           key={work.id}
           date={work.period}

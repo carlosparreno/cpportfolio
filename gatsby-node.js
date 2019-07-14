@@ -65,8 +65,8 @@ exports.createPages = ({ graphql, actions }) => {
         const { edges } = result.data.allMarkdownRemark;
 
         let getLanding;
-        let getAboutMe;
-        let getWorks;
+        let getAbout;
+        let getCareer;
         let getProjects;
 
         // Create a index page for each supported language
@@ -91,15 +91,15 @@ exports.createPages = ({ graphql, actions }) => {
                 break;
 
               case `/${lang}/about`:
-                getAboutMe = aboutMe;
+                getAbout = { aboutMe, title };
                 break;
 
               case `/${lang}/career`:
-                getWorks = works;
+                getCareer = { title, works };
                 break;
 
               case `/${lang}/projects`:
-                getProjects = projects;
+                getProjects = { title, projects };
                 break;
               default:
                 break;
@@ -111,9 +111,9 @@ exports.createPages = ({ graphql, actions }) => {
             component: componentPath,
             context: {
               landing: { ...getLanding },
-              aboutMe: getAboutMe,
-              works: [...getWorks],
-              projects: [...getProjects],
+              about: { ...getAbout },
+              career: { ...getCareer },
+              allProjects: { ...getProjects },
             },
           });
         });

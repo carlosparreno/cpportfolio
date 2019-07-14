@@ -1,7 +1,7 @@
 ---
 path: '/es/career'
 date: '2019-05-16'
-title: 'Career'
+title: 'Carrera Profesional'
 excerpt: 'Esta es la información de mi carrera profesional'
 works:
   [
