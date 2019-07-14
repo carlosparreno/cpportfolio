@@ -1,5 +1,5 @@
 ---
-path: '/projects'
+path: '/en/projects'
 date: '2019-05-14'
 title: 'Projects'
 excerpt: 'These are the most relevant project in my professional career'

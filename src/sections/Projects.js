@@ -1,6 +1,5 @@
 // @flow
 import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
 import Fade from 'react-reveal/Fade';
 import Section from '../components/Section';
 import { CardContainer } from '../components/Card';
@@ -26,44 +25,32 @@ const Background = () => (
   </div>
 );
 
-const Projects = () => (
+type PropTypes = {
+  projects: Array<{
+    id: string,
+    name: string,
+    description: string,
+    projectUrl: string,
+    repositoryUrl: string,
+    publishedDate: string,
+    type: string,
+    logo: {
+      title: string,
+      src: string,
+    },
+  }>,
+};
+
+const Projects = ({ projects }: PropTypes) => (
   <Section.Container id="projects" Background={Background}>
     <Section.Header name="Projects" icon="💻" label="Projects" Box="notebook" />
-    <StaticQuery
-      query={graphql`
-        query ProjectsQuery {
-          markdownRemark(frontmatter: { path: { eq: "/projects" } }) {
-            frontmatter {
-              projects {
-                id
-                name
-                description
-                projectUrl
-                repositoryUrl
-                publishedDate
-                type
-                logo {
-                  title
-                  src
-                }
-              }
-            }
-          }
-        }
-      `}
-      render={data => {
-        const { projects } = data.markdownRemark.frontmatter;
-        return (
-          <CardContainer minWidth="350px">
-            {projects.map((p, i) => (
-              <Fade key={p.id} bottom delay={i * 200}>
-                <ProjectCard {...p} />
-              </Fade>
-            ))}
-          </CardContainer>
-        );
-      }}
-    />
+    <CardContainer minWidth="350px">
+      {projects.map((project, index) => (
+        <Fade key={project.id} bottom delay={index * 200}>
+          <ProjectCard {...project} />
+        </Fade>
+      ))}
+    </CardContainer>
   </Section.Container>
 );
 

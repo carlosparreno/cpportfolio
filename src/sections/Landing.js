@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-import { StaticQuery, graphql } from 'gatsby';
 import { Heading, Text, Flex, Box } from 'rebass';
 import { SectionLink } from 'react-scroll-section';
 import TextLoop from 'react-text-loop';

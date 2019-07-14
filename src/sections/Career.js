@@ -1,6 +1,5 @@
 // @flow
 import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
 import FontAwesome from 'react-fontawesome';
 import Timeline from '../components/Timeline/Timeline';
 import TimelineEvent from '../components/Timeline/TimelineEvent';
@@ -51,7 +50,22 @@ const Background = () => (
   </div>
 );
 
-const Career = () => (
+type PropTypes = {
+  works: Array<{
+    id: string,
+    name: string,
+    description: string,
+    period: string,
+    type: string,
+    company: string,
+    logo: {
+      title: string,
+      src: string,
+    },
+  }>,
+};
+
+const Career = ({ works }: PropTypes) => (
   <Section.Container id="career" Background={Background}>
     <Section.Header
       name="Professional Career"
@@ -59,52 +73,23 @@ const Career = () => (
       label="Professional Carrer"
       Box="notebook"
     />
-    <StaticQuery
-      query={graphql`
-        query CareerQuery {
-          markdownRemark(frontmatter: { path: { eq: "/career" } }) {
-            frontmatter {
-              works {
-                id
-                name
-                description
-                period
-                type
-                company
-                logo {
-                  title
-                  src
-                }
-              }
-            }
+    <Timeline>
+      {works.map((work, index) => (
+        <TimelineEvent
+          key={work.id}
+          date={work.period}
+          iconStyle={work.type === 'work' ? iconWorkStyle : iconSchoolStyle}
+          icon={
+            <FontAwesome
+              className="icon"
+              name={work.type === 'work' ? 'suitcase' : 'graduation-cap'}
+            />
           }
-        }
-      `}
-      render={data => {
-        const { works } = data.markdownRemark.frontmatter;
-        return (
-          <Timeline>
-            {works.map((work, index) => (
-              <TimelineEvent
-                key={work.id}
-                date={work.period}
-                iconStyle={
-                  work.type === 'work' ? iconWorkStyle : iconSchoolStyle
-                }
-                icon={
-                  <FontAwesome
-                    className="icon"
-                    name={work.type === 'work' ? 'suitcase' : 'graduation-cap'}
-                  />
-                }
-              >
-                <RoleCard index={index} {...work} />
-              </TimelineEvent>
-            ))}
-          </Timeline>
-        );
-      }}
-    />
+        >
+          <RoleCard index={index} {...work} />
+        </TimelineEvent>
+      ))}
+    </Timeline>
   </Section.Container>
 );
 

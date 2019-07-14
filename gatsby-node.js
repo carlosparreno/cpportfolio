@@ -6,71 +6,73 @@ const supportedLanguages = {
 };
 
 exports.createPages = ({ graphql, actions }) => {
-  // Create a index page for each supported language
   return new Promise((resolve, reject) => {
-    Object.keys(supportedLanguages).forEach(lang => {
-      const { createPage } = actions;
-      const componentPath = _path.resolve(`src/App.js`);
-      resolve(
-        graphql(
-          `
-            {
-              allMarkdownRemark {
-                edges {
-                  node {
-                    frontmatter {
-                      path
-                      title
-                      roles
-                      socialLinks {
-                        id
-                        fontAwesomeIcon
-                        name
-                        url
-                        enabled
+    resolve(
+      graphql(
+        `
+          {
+            allMarkdownRemark {
+              edges {
+                node {
+                  frontmatter {
+                    path
+                    title
+                    roles
+                    socialLinks {
+                      id
+                      fontAwesomeIcon
+                      name
+                      url
+                      enabled
+                    }
+                    aboutMe
+                    works {
+                      id
+                      name
+                      description
+                      period
+                      type
+                      company
+                      logo {
+                        title
+                        src
                       }
-                      aboutMe
-                      works {
-                        id
-                        name
-                        description
-                        period
-                        type
-                        company
-                        logo {
-                          title
-                          src
-                        }
-                      }
-                      projects {
-                        name
-                        description
-                        projectUrl
-                        repositoryUrl
-                        publishedDate
-                        type
-                        logo {
-                          title
-                          src
-                        }
+                    }
+                    projects {
+                      id
+                      name
+                      description
+                      projectUrl
+                      repositoryUrl
+                      publishedDate
+                      type
+                      logo {
+                        title
+                        src
                       }
                     }
                   }
                 }
               }
             }
-          `
-        ).then(result => {
-          if (result.errors) {
-            reject(result.errors);
           }
+        `
+      ).then(result => {
+        if (result.errors) {
+          reject(result.errors);
+        }
 
-          const { edges } = result.data.allMarkdownRemark;
+        const { edges } = result.data.allMarkdownRemark;
 
-          let getLanding;
-          let getAboutMe;
-          const work = 'work';
-          const projects = 'projects';
+        let getLanding;
+        let getAboutMe;
+        let getWorks;
+        let getProjects;
+
+        // Create a index page for each supported language
+        Object.keys(supportedLanguages).forEach(lang => {
+          const { createPage } = actions;
+          const componentPath = _path.resolve(`src/App.js`);
 
           edges.forEach(edge => {
             const {
@@ -79,6 +81,8 @@ exports.createPages = ({ graphql, actions }) => {
               roles,
               socialLinks,
               aboutMe,
+              works,
+              projects,
             } = edge.node.frontmatter;
 
             switch (path) {
@@ -90,6 +94,13 @@ exports.createPages = ({ graphql, actions }) => {
                 getAboutMe = aboutMe;
                 break;
 
+              case `/${lang}/career`:
+                getWorks = works;
+                break;
+
+              case `/${lang}/projects`:
+                getProjects = projects;
+                break;
               default:
                 break;
             }
@@ -99,15 +110,14 @@ exports.createPages = ({ graphql, actions }) => {
             path: lang === 'en' ? '/' : `/${lang}`,
             component: componentPath,
             context: {
-              edges,
               landing: { ...getLanding },
               aboutMe: getAboutMe,
-              work,
-              projects,
+              works: [...getWorks],
+              projects: [...getProjects],
             },
           });
-        })
-      );
-    });
+        });
+      })
+    );
   });
 };

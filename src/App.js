@@ -12,11 +12,13 @@ type PropTypes = {
   pageContext: {
     aboutMe: string,
     landing: Object,
+    works: Array<Object>,
+    projects: Array<Object>,
   },
 };
 
 const App = ({ pageContext }: PropTypes) => {
-  const { aboutMe, landing } = pageContext;
+  const { aboutMe, landing, works, projects } = pageContext;
 
   if (window.location.pathname === '/' && navigator.language.startsWith('es')) {
     window.location.href = `${window.location.origin}/es`;
@@ -30,8 +32,8 @@ const App = ({ pageContext }: PropTypes) => {
       <Header />
       <Landing landing={landing} />
       <About aboutMe={aboutMe} />
-      <Career />
-      <Projects />
+      <Career works={works} />
+      <Projects projects={projects} />
       <Footer />
     </Layout>
   );

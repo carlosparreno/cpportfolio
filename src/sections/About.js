@@ -46,34 +46,24 @@ type PropTypes = {
   aboutMe: string,
 };
 
-const About = ({ aboutMe }: PropTypes) => {
-  return (
-    <Section.Container id="about" Background={Background}>
-      <Section.Header name="About me" icon="🙋‍♂️" label="person" />
+const About = ({ aboutMe }: PropTypes) => (
+  <Section.Container id="about" Background={Background}>
+    <Section.Header name="About me" icon="🙋‍♂️" label="person" />
 
-      <Flex justifyContent="center" alignItems="center" flexWrap="wrap">
-        <Box width={[1, 1, 4 / 6]} px={[1, 2, 4]}>
-          <Fade bottom>
-            <ReactMarkdown source={aboutMe} renderers={markdownRenderer} />
-          </Fade>
-        </Box>
+    <Flex justifyContent="center" alignItems="center" flexWrap="wrap">
+      <Box width={[1, 1, 4 / 6]} px={[1, 2, 4]}>
+        <Fade bottom>
+          <ReactMarkdown source={aboutMe} renderers={markdownRenderer} />
+        </Fade>
+      </Box>
 
-        <Box
-          width={[1, 1, 2 / 6]}
-          style={{ maxWidth: '300px', margin: 'auto' }}
-        >
-          <Fade right>
-            <ProfilePicture
-              src={Logo}
-              alt="Logo"
-              mt={[4, 4, 0]}
-              ml={[0, 0, 1]}
-            />
-          </Fade>
-        </Box>
-      </Flex>
-    </Section.Container>
-  );
-};
+      <Box width={[1, 1, 2 / 6]} style={{ maxWidth: '300px', margin: 'auto' }}>
+        <Fade right>
+          <ProfilePicture src={Logo} alt="Logo" mt={[4, 4, 0]} ml={[0, 0, 1]} />
+        </Fade>
+      </Box>
+    </Flex>
+  </Section.Container>
+);
 
 export default About;

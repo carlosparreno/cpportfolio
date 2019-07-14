@@ -7,12 +7,12 @@ works:
   [
     {
       id: 'ibm-watson-health',
-      name: 'Senior Software Engineer',
-      description: "### IBM Watson Health: Government
-        \n\n **Company:** IBM Ireland
-        \n\n **Purpose:** Create well-architected, localizable and maintainable Government solutions to improve the value of health and human services of our Government customers.
+      name: 'Ingeniero de Front End',
+      description: "### IBM Watson Health: Goviernos
+        \n\n **Compañia:** IBM Irlanda
+        \n\n **Propósito:** Crear soluciones bien diseñadas, localizables y mantenibles para mejorar el valor de la sanidad y servicios humanos de nuestros clientes gubernamentales.
         \n\n **React** | **Redux** | **Flow** | **Jest** | **Puppeteer**",
-      period: 'June 2017 - Present',
+      period: 'Junio 2017 - Presente',
       type: 'work',
       company: 'IBM Dublin',
       logo: { title: 'watson health image', src: '/ibm-watson-health2.jpg' },
