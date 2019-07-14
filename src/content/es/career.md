@@ -10,7 +10,7 @@ works:
       name: 'Ingeniero de Front End',
       description: "### IBM Watson Health: Gobiernos
         \n\n **Compañía:** IBM Irlanda
-        \n\n **Propósito:** Crear aplicaciones modernas, bien diseñadas, localizables y mantenibles para mejorar la calidad de la sanidad y servicios humanos de nuestros clientes gubernamentales.
+        \n\n **Propósito:** Crear aplicaciones modernas, bien estructuradas, localizables y mantenibles para mejorar la calidad de la sanidad y servicios humanos de nuestros clientes gubernamentales.
         \n\n **React** | **Redux** | **Flow** | **Jest** | **Puppeteer**",
       period: 'Junio 2017 - Presente',
       type: 'work',
