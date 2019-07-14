@@ -1,16 +1,16 @@
 ---
-path: '/career'
+path: '/en/career'
 date: '2019-05-16'
 title: 'Career'
 excerpt: 'This is my professional career info'
 works:
   [
     {
-      id: 'ibm-watson-health',
+      id: 'career-ibm-watson-health',
       name: 'Senior Software Engineer',
       description: "### IBM Watson Health: Government
         \n\n **Company:** IBM Ireland
-        \n\n **Purpose:** Create well-architected, localizable and maintainable Government solutions to improve the value of health and human services of our Government customers.
+        \n\n **Purpose:** Create modern, well-architected, localizable and maintainable Government solutions to improve the value of health and human services of our Government customers.
         \n\n **React** | **Redux** | **Flow** | **Jest** | **Puppeteer**",
       period: 'June 2017 - Present',
       type: 'work',
@@ -18,7 +18,7 @@ works:
       logo: { title: 'watson health image', src: '/ibm-watson-health2.jpg' },
     },
     {
-      id: 'ibm-sametime',
+      id: 'career-ibm-sametime',
       name: 'Front End Technical Lead',
       description: "### IBM Sametime Webchat
         \n\n **Company:** IBM Ireland
@@ -30,7 +30,7 @@ works:
       logo: { title: 'ibm sametime image', src: '/ibm-sametime.jpg' },
     },
     {
-      id: 'ibm-smart-cloud-notes',
+      id: 'career-ibm-smart-cloud-notes',
       name: 'Software Engineer',
       description: "### IBM Smart Cloud Notes
         \n\n **Company:** IBM Ireland
@@ -41,12 +41,20 @@ works:
       company: 'IBM Dublin',
       logo: { title: 'ibm smartcloud image', src: '/ibm-smart-cloud.jpg' },
     },
-    { id: 'ibm-xpages', name: 'Software Engineer', description: "### IBM XPages
+    {
+      id: 'career-ibm-xpages',
+      name: 'Software Engineer',
+      description: "### IBM XPages
         \n\n **Company:** IBM Ireland
         \n\n **Purpose:** Provide a component-oriented rapid web development framework that allows data from IBM Notes and Relational Databases to be displayed to browser on all platforms.
-        \n\n **JS** | **Java** | **CSS** | **Dojo**", period: 'November 2013 - February 2014', type: 'work', company: 'IBM Dublin', logo: { title: 'ibm xpages image', src: '/ibm-logo.jpg' } },
+        \n\n **JS** | **Java** | **CSS** | **Dojo** | **XML**",
+      period: 'November 2013 - February 2014',
+      type: 'work',
+      company: 'IBM Dublin',
+      logo: { title: 'ibm xpages image', src: '/ibm-logo.jpg' },
+    },
     {
-      id: 'ibm-brussels',
+      id: 'career-ibm-brussels',
       name: 'Developer Intern',
       description: "### IBM Software Group
         \n\n **Company:** IBM Belgium
@@ -58,7 +66,7 @@ works:
       logo: { title: 'ibm brussels image', src: '/ibm-logo2.jpg' },
     },
     {
-      id: 'uhu-thesis',
+      id: 'career-uhu-thesis',
       name: 'Thesis / Master Degree Final Project ',
       description: "### University of Huelva (Spain)
         \n\n **WIFISIM EXTENSION:** A Wireless communications planning, optimization and deployment solution.
@@ -70,7 +78,7 @@ works:
       logo: { title: 'uhu image', src: '/uhu.jpg' },
     },
     {
-      id: 'uis-master',
+      id: 'career-uis-master',
       name: 'Master in Computer Science',
       description: "### University of Stavanger (Norway)
         \n\n **Subjects:** Wireless Communications | Image Processing | Security Networks | Distributed systems | Reliability Analysis | Pattern Recognition
@@ -81,7 +89,7 @@ works:
       logo: { title: 'uis image', src: '/uis.jpg' },
     },
     {
-      id: 'uhu-master-degree',
+      id: 'career-uhu-master-degree',
       name: 'Master Degree in Computer Science',
       description: "### University of Huelva (Spain)
         \n\n **Subjects:** Software engineering | Computer Architecture | Artificial Intelligence | Data Structures | Networks | Data Bases | Compilers
@@ -92,12 +100,12 @@ works:
       logo: { title: 'uhu image', src: '/uhu.jpg' },
     },
     {
-      id: 'uhu-bachelor',
+      id: 'career-uhu-bachelor',
       name: 'Bachelor in Computer Science',
       description: "### University of Huelva (Spain)
         \n\n **Subjects:** Software engineering | Programming | Computer Fundamentals | Data Structures | Operative Systems | Data Bases
         \n\n **Programming languages:** C | C++ | Java | HTML | CSS | JS | C#",
-      period: 'September 2015 - September 2010',
+      period: 'September 2005 - September 2010',
       type: 'school',
       company: 'University of Huelva',
       logo: { title: 'uhu image', src: '/uhu.jpg' },

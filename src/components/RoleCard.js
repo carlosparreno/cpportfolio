@@ -44,15 +44,14 @@ const RoleImage = styled(Image)`
 `;
 
 type PropTypes = {
-  id: string,
   index: number,
   name: string,
   description: string,
   logo: { title: string, src: string },
 };
 
-const RoleCard = ({ id, index, name, description, logo }: PropTypes) => (
-  <Fade key={id} bottom delay={index * 200}>
+const RoleCard = ({ index, name, description, logo }: PropTypes) => (
+  <Fade bottom delay={index * 200}>
     <Card p={0}>
       <Flex style={{ height: CARD_HEIGHT }}>
         <TextContainer>

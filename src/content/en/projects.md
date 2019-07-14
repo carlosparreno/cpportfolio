@@ -1,5 +1,5 @@
 ---
-path: '/projects'
+path: '/en/projects'
 date: '2019-05-14'
 title: 'Projects'
 excerpt: 'These are the most relevant project in my professional career'
@@ -14,6 +14,8 @@ projects:
       publishedDate: '2012',
       type: 'Master Thesis',
       logo: { title: 'wifisim extension image', src: '/wifisim-extension.jpg' },
+      githubHint: 'Check the repository',
+      webHint: "See the project's web",
     },
   ]
 ---

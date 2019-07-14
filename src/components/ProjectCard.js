@@ -74,6 +74,8 @@ type PropTypes = {
   type: string,
   publishedDate: string,
   logo: { title: string, src: string },
+  githubHint: string,
+  webHint: string,
 };
 
 const ProjectCard = ({
@@ -84,6 +86,8 @@ const ProjectCard = ({
   type,
   publishedDate,
   logo,
+  githubHint,
+  webHint,
 }: PropTypes) => (
   <Card p={0}>
     <Flex style={{ height: CARD_HEIGHT }}>
@@ -108,14 +112,14 @@ const ProjectCard = ({
           >
             <Box mx={1} fontSize={5}>
               <SocialLink
-                name="Check repository"
+                name={githubHint}
                 fontAwesomeIcon="github"
                 url={repositoryUrl}
               />
             </Box>
             <Box mx={1} fontSize={5}>
               <SocialLink
-                name="See project"
+                name={webHint}
                 fontAwesomeIcon="globe"
                 url={projectUrl}
               />

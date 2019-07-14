@@ -1,3 +1,4 @@
+// @flow
 import React from 'react';
 import { Heading, Box } from 'rebass';
 import Layout from '../components/Layout';

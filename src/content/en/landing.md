@@ -1,12 +1,12 @@
 ---
-path: '/'
+path: '/en'
 date: '2019-05-11'
 title: 'Carlos Parreño'
 excerpt: 'This is the project for my porftolio'
 roles:
   [
     'Software Engineer 👨🏻‍💻',
-    'In Watson Health at IBM 💙',
+    'In IBM Watson Health 💙',
     'From Spain 🇪🇸',
     'Living in Dublin 🇮🇪',
   ]

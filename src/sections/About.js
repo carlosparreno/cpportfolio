@@ -1,6 +1,6 @@
+// @flow
 import React from 'react';
 import { Box, Image, Flex } from 'rebass';
-import { StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
 import Fade from 'react-reveal/Fade';
 import ReactMarkdown from 'react-markdown';
@@ -42,47 +42,30 @@ const ProfilePicture = styled(Image)`
   }
 `;
 
-const About = () => (
-  <Section.Container id="about" Background={Background}>
-    <Section.Header name="About me" icon="🙋‍♂️" label="person" />
-    <StaticQuery
-      query={graphql`
-        query AboutMeQuery {
-          markdownRemark(frontmatter: { path: { eq: "/about" } }) {
-            frontmatter {
-              aboutMe
-            }
-          }
-        }
-      `}
-      render={data => {
-        const { aboutMe } = data.markdownRemark.frontmatter;
+type PropTypes = {
+  about: {
+    title: string,
+    aboutMe: string,
+  },
+};
 
-        return (
-          <Flex justifyContent="center" alignItems="center" flexWrap="wrap">
-            <Box width={[1, 1, 4 / 6]} px={[1, 2, 4]}>
-              <Fade bottom>
-                <ReactMarkdown source={aboutMe} renderers={markdownRenderer} />
-              </Fade>
-            </Box>
+const About = ({ about }: PropTypes) => (
+  <Section.Container id={about.title} Background={Background}>
+    <Section.Header name={about.title} icon="🙋‍♂️" label={about.title} />
 
-            <Box
-              width={[1, 1, 2 / 6]}
-              style={{ maxWidth: '300px', margin: 'auto' }}
-            >
-              <Fade right>
-                <ProfilePicture
-                  src={Logo}
-                  alt="Logo"
-                  mt={[4, 4, 0]}
-                  ml={[0, 0, 1]}
-                />
-              </Fade>
-            </Box>
-          </Flex>
-        );
-      }}
-    />
+    <Flex justifyContent="center" alignItems="center" flexWrap="wrap">
+      <Box width={[1, 1, 4 / 6]} px={[1, 2, 4]}>
+        <Fade bottom>
+          <ReactMarkdown source={about.aboutMe} renderers={markdownRenderer} />
+        </Fade>
+      </Box>
+
+      <Box width={[1, 1, 2 / 6]} style={{ maxWidth: '300px', margin: 'auto' }}>
+        <Fade right>
+          <ProfilePicture src={Logo} alt="Logo" mt={[4, 4, 0]} ml={[0, 0, 1]} />
+        </Fade>
+      </Box>
+    </Flex>
   </Section.Container>
 );
 
