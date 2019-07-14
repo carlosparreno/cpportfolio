@@ -8,6 +8,14 @@ import Projects from './sections/Projects';
 import Career from './sections/Career';
 import Footer from './components/Footer';
 
+const getLocale = () => {
+  // For now only 'en' (default as '/') and 'es' are supported
+  if (typeof window !== 'undefined' && navigator.language.startsWith('es')) {
+    return '/es/';
+  }
+  return '/';
+};
+
 type PropTypes = {
   pageContext: {
     about: Object,
@@ -20,18 +28,14 @@ type PropTypes = {
 const App = ({ pageContext }: PropTypes) => {
   const { about, landing, career, allProjects } = pageContext;
 
-  // For now only 'en' (default) and 'es' are supported
   if (
     typeof window !== 'undefined' &&
-    window.location.pathname === '/' &&
-    navigator.language.startsWith('es')
+    window.location.href !== `${window.location.origin}${getLocale()}`
   ) {
-    window.location.href = `${window.location.origin}/es`;
+    window.location.href = `${window.location.origin}${getLocale()}`;
     return null;
   }
 
-  /* eslint-disable-next-line */
-  console.log(pageContext);
   return (
     <Layout>
       <Header />
