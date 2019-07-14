@@ -20,7 +20,12 @@ type PropTypes = {
 const App = ({ pageContext }: PropTypes) => {
   const { about, landing, career, allProjects } = pageContext;
 
-  if (window.location.pathname === '/' && navigator.language.startsWith('es')) {
+  // For now only 'en' (default) and 'es' are supported
+  if (
+    typeof window !== 'undefined' &&
+    window.location.pathname === '/' &&
+    navigator.language.startsWith('es')
+  ) {
     window.location.href = `${window.location.origin}/es`;
     return null;
   }
