@@ -69,11 +69,11 @@ type PropTypes = {
 };
 
 const Career = ({ career }: PropTypes) => (
-  <Section.Container id="career" Background={Background}>
+  <Section.Container id={career.title} Background={Background}>
     <Section.Header
       name={career.title}
       icon="👨🏻‍💻"
-      label="Professional Carrer"
+      label={career.title}
       Box="notebook"
     />
     <Timeline>

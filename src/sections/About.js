@@ -50,8 +50,8 @@ type PropTypes = {
 };
 
 const About = ({ about }: PropTypes) => (
-  <Section.Container id="about" Background={Background}>
-    <Section.Header name={about.title} icon="🙋‍♂️" label="person" />
+  <Section.Container id={about.title} Background={Background}>
+    <Section.Header name={about.title} icon="🙋‍♂️" label={about.title} />
 
     <Flex justifyContent="center" alignItems="center" flexWrap="wrap">
       <Box width={[1, 1, 4 / 6]} px={[1, 2, 4]}>

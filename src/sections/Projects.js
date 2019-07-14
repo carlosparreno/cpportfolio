@@ -45,11 +45,11 @@ type PropTypes = {
 };
 
 const Projects = ({ allProjects }: PropTypes) => (
-  <Section.Container id="projects" Background={Background}>
+  <Section.Container id={allProjects.title} Background={Background}>
     <Section.Header
       name={allProjects.title}
       icon="💻"
-      label="Projects"
+      label={allProjects.title}
       Box="notebook"
     />
     <CardContainer minWidth="350px">
