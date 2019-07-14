@@ -2,15 +2,15 @@
 path: '/es/career'
 date: '2019-05-16'
 title: 'Career'
-excerpt: 'This is my professional career info'
+excerpt: 'Esta es la información de mi carrera profesional'
 works:
   [
     {
-      id: 'ibm-watson-health',
+      id: 'career-ibm-watson-health',
       name: 'Ingeniero de Front End',
-      description: "### IBM Watson Health: Goviernos
-        \n\n **Compañia:** IBM Irlanda
-        \n\n **Propósito:** Crear soluciones bien diseñadas, localizables y mantenibles para mejorar el valor de la sanidad y servicios humanos de nuestros clientes gubernamentales.
+      description: "### IBM Watson Health: Gobiernos
+        \n\n **Compañía:** IBM Irlanda
+        \n\n **Propósito:** Crear aplicaciones modernas, bien diseñadas, localizables y mantenibles para mejorar la calidad de la sanidad y servicios humanos de nuestros clientes gubernamentales.
         \n\n **React** | **Redux** | **Flow** | **Jest** | **Puppeteer**",
       period: 'Junio 2017 - Presente',
       type: 'work',
@@ -18,88 +18,96 @@ works:
       logo: { title: 'watson health image', src: '/ibm-watson-health2.jpg' },
     },
     {
-      id: 'ibm-sametime',
-      name: 'Front End Technical Lead',
+      id: 'career-ibm-sametime',
+      name: 'Lider de equipo Front End',
       description: "### IBM Sametime Webchat
-        \n\n **Company:** IBM Ireland
-        \n\n **Purpose:** Provide a communication and collaboration solution for enterprises. Provide as well Sametime integration to other IBM products.
+        \n\n **Compañía:** IBM Irlanda
+        \n\n **Propósito:** Proporcionar una aplicación de comunicación y colaboración para empresas llamada Sametime. Proporcionar también la integración de Sametime a otros productos de IBM.
         \n\n **HTML** | **JS** | **Dojo** | **SaSS** | **AJAX** | **Jasmine**",
-      period: 'March 2015 - June 2017',
+      period: 'Marzo 2015 - Junio 2017',
       type: 'work',
       company: 'IBM Dublin',
       logo: { title: 'ibm sametime image', src: '/ibm-sametime.jpg' },
     },
     {
-      id: 'ibm-smart-cloud-notes',
-      name: 'Software Engineer',
+      id: 'career-ibm-smart-cloud-notes',
+      name: 'Ingeniero de Software',
       description: "### IBM Smart Cloud Notes
-        \n\n **Company:** IBM Ireland
-        \n\n **Purpose:** Creating of monitoring tools for the core systems of IBM e-mail Cloud.
+        \n\n **Compañía:** IBM Irlanda
+        \n\n **Propósito:** Creación de herramientas de monitorización para los sistemas centrales de IBM e-mail Cloud.
         \n\n **Java** | **Spring** | **C++** | **Junit** | **New Relic**",
-      period: 'March 2014 - February 2015',
+      period: 'Marzo 2014 - Febrero 2015',
       type: 'work',
       company: 'IBM Dublin',
       logo: { title: 'ibm smartcloud image', src: '/ibm-smart-cloud.jpg' },
     },
-    { id: 'ibm-xpages', name: 'Software Engineer', description: "### IBM XPages
-        \n\n **Company:** IBM Ireland
-        \n\n **Purpose:** Provide a component-oriented rapid web development framework that allows data from IBM Notes and Relational Databases to be displayed to browser on all platforms.
-        \n\n **JS** | **Java** | **CSS** | **Dojo**", period: 'November 2013 - February 2014', type: 'work', company: 'IBM Dublin', logo: { title: 'ibm xpages image', src: '/ibm-logo.jpg' } },
     {
-      id: 'ibm-brussels',
-      name: 'Developer Intern',
-      description: "### IBM Software Group
-        \n\n **Company:** IBM Belgium
-        \n\n **Purpose:** Create a solution named *Integration on the Glass* that integrates the most relevant information and tools that the IBM Benelux managers use on their daily basis.
-        \n\n **JS** | **Java** | **CSS** | **Dojo** | **IBM XPages**",
-      period: 'March 2013 - October 2013',
+      id: 'career-ibm-xpages',
+      name: 'Ingeniero de Software',
+      description: "### IBM XPages
+        \n\n **Compañía:** IBM Irlanda
+        \n\n **Propósito:** Proporcionar un framework de rápido desarrollo web orientado a componentes que permita que los datos de IBM Notes y las bases de datos relacionales se muestren en todos los navegador y plataformas.
+        \n\n **JS** | **Java** | **CSS** | **Dojo** | **XML**",
+      period: 'Noviembre 2013 - Febrero 2014',
       type: 'work',
-      company: 'IBM Brussels',
+      company: 'IBM Dublin',
+      logo: { title: 'ibm xpages image', src: '/ibm-logo.jpg' },
+    },
+    {
+      id: 'career-ibm-brussels',
+      name: 'Desarrollador en prácticas',
+      description: "### IBM Software Group
+        \n\n **Compañía:** IBM Bélgica
+        \n\n **Propósito:** Crear una solución llamada *Integration on the Glass* que integra la información y herramientas más relevantes que los managers de IBM Benelux utilizan diariamente.
+        \n\n **JS** | **Java** | **CSS** | **Dojo** | **IBM XPages**",
+      period: 'Marzo 2013 - Octubre 2013',
+      type: 'work',
+      company: 'IBM Bruselas',
       logo: { title: 'ibm brussels image', src: '/ibm-logo2.jpg' },
     },
     {
-      id: 'uhu-thesis',
+      id: 'career-uhu-thesis',
       name: 'Thesis / Master Degree Final Project ',
-      description: "### University of Huelva (Spain)
-        \n\n **WIFISIM EXTENSION:** A Wireless communications planning, optimization and deployment solution.
-        \n\n 🥇Graduated with honours
+      description: "### Universidad of Huelva (Spain)
+        \n\n **WIFISIM EXTENSION:** Una herramienta de planificación, optimización y despliegue de comunicaciones inalámbricas.
+        \n\n 🥇Matricula de honor
         \n\n **Java** | **WindowBuilder** | **Java2D**",
-      period: 'September 2012 - January 2013',
+      period: 'Septiembre 2012 - Enero 2013',
       type: 'school',
-      company: 'University of Huelva',
+      company: 'University de Huelva',
       logo: { title: 'uhu image', src: '/uhu.jpg' },
     },
     {
-      id: 'uis-master',
+      id: 'career-uis-master',
       name: 'Master in Computer Science',
-      description: "### University of Stavanger (Norway)
-        \n\n **Subjects:** Wireless Communications | Image Processing | Security Networks | Distributed systems | Reliability Analysis | Pattern Recognition
-        \n\n **Programming languages:** Java | Matlab",
-      period: 'August 2011 - September 2012',
+      description: "### Universidad of Stavanger (Norway)
+        \n\n **Asignaturas:** Comunicaciones Inalambricas| Procesamiento de Imagenes | Seguridad de redes | Sistemas distribuidos | Análisis de fiabilidad | Reconición de patrones
+        \n\n **Lenguages de programación:** Java | Matlab",
+      period: 'Agosto 2011 - Septiembre 2012',
       type: 'school',
-      company: 'University of Stavanger',
+      company: 'Universidad de Stavanger',
       logo: { title: 'uis image', src: '/uis.jpg' },
     },
     {
-      id: 'uhu-master-degree',
+      id: 'career-uhu-master-degree',
       name: 'Master Degree in Computer Science',
-      description: "### University of Huelva (Spain)
-        \n\n **Subjects:** Software engineering | Computer Architecture | Artificial Intelligence | Data Structures | Networks | Data Bases | Compilers
-        \n\n **Programming languages:** Java | HTML | CSS | JS | C#",
-      period: 'September 2010 - September 2012',
+      description: "### Universidad of Huelva (Spain)
+        \n\n **Asignaturas:** Ingeniería de Software | Arquitectura de computadores | Inteligencia artificial | Estructuras de datos | Redes | Bases de datos | Compiladores
+        \n\n **Lenguages de programación:** Java | HTML | CSS | JS | C#",
+      period: 'Septiembre 2010 - Septiembre 2012',
       type: 'school',
-      company: 'University of Huelva',
+      company: 'Universidad de Huelva',
       logo: { title: 'uhu image', src: '/uhu.jpg' },
     },
     {
-      id: 'uhu-bachelor',
+      id: 'career-uhu-bachelor',
       name: 'Bachelor in Computer Science',
-      description: "### University of Huelva (Spain)
-        \n\n **Subjects:** Software engineering | Programming | Computer Fundamentals | Data Structures | Operative Systems | Data Bases
-        \n\n **Programming languages:** C | C++ | Java | HTML | CSS | JS | C#",
-      period: 'September 2015 - September 2010',
+      description: "### Universidad of Huelva (Spain)
+        \n\n **Asignaturas:** Ingeniería de Software | Programación | Fundamento de los computadores | Estructuras de datos | Sistemas operativos | Bases de datos
+        \n\n **Lenguages de programación:** C | C++ | Java | HTML | CSS | JS | C#",
+      period: 'Septiembre 2005 - Septiembre 2010',
       type: 'school',
-      company: 'University of Huelva',
+      company: 'Universidad de Huelva',
       logo: { title: 'uhu image', src: '/uhu.jpg' },
     },
   ]
