@@ -7,7 +7,7 @@ works:
   [
     {
       id: 'career-ibm-watson-health',
-      name: 'Ingeniero de Front End',
+      name: 'Ingeniero Front End',
       description: "### IBM Watson Health: Gobiernos
         \n\n **Compañía:** IBM Irlanda
         \n\n **Propósito:** Crear aplicaciones modernas, bien estructuradas, localizables y mantenibles para mejorar la calidad de la sanidad y servicios humanos de nuestros clientes gubernamentales.
