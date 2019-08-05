@@ -111,18 +111,22 @@ const ProjectCard = ({
             }}
           >
             <Box mx={1} fontSize={5}>
-              <SocialLink
-                name={githubHint}
-                fontAwesomeIcon="github"
-                url={repositoryUrl}
-              />
+              {repositoryUrl && (
+                <SocialLink
+                  name={githubHint}
+                  fontAwesomeIcon="github"
+                  url={repositoryUrl}
+                />
+              )}
             </Box>
             <Box mx={1} fontSize={5}>
-              <SocialLink
-                name={webHint}
-                fontAwesomeIcon="globe"
-                url={projectUrl}
-              />
+              {projectUrl && (
+                <SocialLink
+                  name={webHint}
+                  fontAwesomeIcon="globe"
+                  url={projectUrl}
+                />
+              )}
             </Box>
           </Flex>
           <ImageSubtitle
