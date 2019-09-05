@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: "Carlos Parreño's portfolio",
-    description: 'This is the project for my porftolio',
+    title: 'Carlos Parreño Bonaño',
+    description: 'Personal porftolio',
   },
   plugins: [
     'gatsby-transformer-remark',
