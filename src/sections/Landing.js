@@ -74,15 +74,13 @@ const LandingPage = ({ landing }: PropTypes) => {
           mb={[3, 5]}
           textAlign="center"
         >
-          {
-            <TextLoop>
+          <TextLoop>
               {roles.map(text => (
                 <Text width={[300, 500]} key={text}>
                   {text}
                 </Text>
               ))}
             </TextLoop>
-          }
         </Heading>
 
         <Flex alignItems="center" justifyContent="center" flexWrap="wrap">

@@ -38,7 +38,7 @@ const Page404 = () => (
           404
         </Heading>
         <Heading color="secondary" fontSize={['4rem', '5rem', '6rem']}>
-          {"It seems that there isn't anything here"}
+          It seems that there isn't anything here
         </Heading>
       </Box>
     </Section.Container>
