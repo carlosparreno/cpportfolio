@@ -33,5 +33,30 @@ projects:
       githubHint: 'Revisa el repositorio',
       webHint: 'Mira la web del proyecto',
     },
+    {
+      id: 'project-ibm-verse-rich-client-integration',
+      name: 'IBM Verse - Rich Client Integration',
+      description: 'Funcionalidad inovativa para alcanzar un mayor nivel de interoperabilidad entre IBM Sametime (aplicación local y IBM Verse chat(aplicación web). La parte inovativa de esta funcionalidad es que no requiere configuración de seguridad a nivel de la aplicación local ni tampoco en el navegador.',
+      projectUrl: null,
+      repositoryUrl: null,
+      publishedDate: '2016',
+      type: 'Integración de chat',
+      logo:
+        { title: 'IBM Verse - Rich Client Integration', src: '/ibm-verse.png' },
+      githubHint: 'Revisa el repositorio',
+      webHint: 'Mira la web del proyecto',
+    },
+    {
+      id: 'project-ibm-service-corps',
+      name: 'IBM Serice Corps - INCAN Paraguay',
+      description: 'Me uní al IBM Service Corps en un proyecto filantrópico en Paraguay para trabajar junto a organizaciones internacionales líderes en cáncer para mejorar la atención del cáncer en países de ingresos medios y bajos. El resultado fue una herramienta de informe estructurado para la patología anatómica del cáncer.',
+      projectUrl: 'https://citycancerchallenge.org/addresing-a-critical-gap-in-the-areas-of-pathology-and-cancer-surveillance/',
+      repositoryUrl: null,
+      publishedDate: '2020',
+      type: 'Herramienta de informe de patología de cáncer',
+      logo: { title: 'IBM Service Corps - INCAN Paraguay', src: '/incan.jpg' },
+      githubHint: 'Revisa el repositorio',
+      webHint: 'Mira la web del proyecto',
+    },
   ]
 ---
