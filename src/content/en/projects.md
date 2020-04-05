@@ -33,5 +33,30 @@ projects:
       githubHint: 'Check the repository',
       webHint: "See the project's web",
     },
+    {
+      id: 'project-ibm-verse-rich-client-integration',
+      name: 'IBM Verse - Rich Client Integration',
+      description: 'Innovative feature to achieve a greater level of interoperability between IBM Sametime desktop application and IBM Verse chat. The novel part comes with an implementation that does not require any security configuration on the browser or the desktop application.',
+      projectUrl: null,
+      repositoryUrl: null,
+      publishedDate: '2016',
+      type: 'Chat integration',
+      logo:
+        { title: 'IBM Verse - Rich Client Integration', src: '/ibm-verse.png' },
+      githubHint: 'Check the repository',
+      webHint: "See the project's web",
+    },
+    {
+      id: 'project-ibm-service-corps',
+      name: 'IBM Serice Corps - INCAN Paraguay',
+      description: 'I joined the IBM Corporate Service Corps in a philanthropic project in Paraguay to work alongside leading international cancer organisations to improve cancer care in low and middle income countries. The outcome was a Structured Reporting Tool for Anatomical Cancer Pathology.',
+      projectUrl: 'https://citycancerchallenge.org/addresing-a-critical-gap-in-the-areas-of-pathology-and-cancer-surveillance/',
+      repositoryUrl: null,
+      publishedDate: '2020',
+      type: 'Cancer Pathology Reporting Tool',
+      logo: { title: 'IBM Service Corps - INCAN Paraguay', src: '/incan.jpg' },
+      githubHint: 'Check the repository',
+      webHint: "See the project's web",
+    },
   ]
 ---
