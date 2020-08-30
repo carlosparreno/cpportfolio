@@ -50,8 +50,8 @@ projects:
       id: 'project-ibm-spm-design-system',
       name: 'IBM SPM React Design System',
       description: 'Un sistema de diseño web construido en React para la interfaz de usuario de nuestros clientes gubernamentales en IBM Watson Health. Este sistema de diseño proporciona componentes web que son accesibles, localizables y adaptativos. Este sistema de diseño también se utiliza como núcleo para la interfaz de usuario de otras aplicaciones en Watson Health Government and Human Services.',
-      projectUrl: null,
-      repositoryUrl: 'https://www.youtube.com/watch?v=0145hAfxxkc&t=106s',
+      projectUrl: 'https://www.youtube.com/watch?v=0145hAfxxkc&t=106s',
+      repositoryUrl: null,
       publishedDate: '2017',
       type: 'UX Componentes Web',
       logo:
@@ -60,7 +60,7 @@ projects:
           src: '/ibm-spm-reactwds.png',
         },
       githubHint: 'Revisa el repositorio',
-      webHint: 'Mira la web del proyecto',
+      webHint: 'Mira la web de uno de nuestros clientes gubernamentales',
     },
     {
       id: 'project-ibm-service-corps',
@@ -72,7 +72,7 @@ projects:
       type: 'Herramienta de informe de patología de cáncer',
       logo: { title: 'IBM Service Corps - INCAN Paraguay', src: '/incan.jpg' },
       githubHint: 'Revisa el repositorio',
-      webHint: 'Mira la web del proyecto',
+      webHint: 'Mira este artículo acerca del proyecto',
     },
   ]
 ---
