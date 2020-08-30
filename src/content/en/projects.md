@@ -47,6 +47,22 @@ projects:
       webHint: "See the project's web",
     },
     {
+      id: 'project-ibm-spm-design-system',
+      name: 'IBM SPM React Design System',
+      description: 'A UX Design System in React for our Government customers in IBM Watson Health. This Design System provides reusable UI components that are accessible, localised and responsive out of the box. This Design System is also used as the front end core for other applications in Watson Health Government and Human Services.',
+      projectUrl: null,
+      repositoryUrl: 'https://www.youtube.com/watch?v=0145hAfxxkc&t=106s',
+      publishedDate: '2017',
+      type: 'UX Web components',
+      logo:
+        {
+          title: 'IBM SPM - React Design System',
+          src: '/ibm-spm-reactwds.png',
+        },
+      githubHint: 'Check the repository',
+      webHint: "See the project's web",
+    },
+    {
       id: 'project-ibm-service-corps',
       name: 'IBM Serice Corps - INCAN Paraguay',
       description: 'I joined the IBM Corporate Service Corps in a philanthropic project in Paraguay to work alongside leading international cancer organisations to improve cancer care in low and middle income countries. The outcome was a Structured Reporting Tool for Anatomical Cancer Pathology.',
