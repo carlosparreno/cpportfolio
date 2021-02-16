@@ -31,7 +31,6 @@ const App = ({ pageContext }: PropTypes) => {
   }
 
   /* eslint-disable-next-line */
-  console.log(pageContext);
   return (
     <Layout>
       <Header />
