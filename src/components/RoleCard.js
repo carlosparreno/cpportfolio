@@ -53,7 +53,7 @@ type PropTypes = {
 const RoleCard = ({ index, name, description, logo }: PropTypes) => (
   <Fade bottom delay={index * 200}>
     <Card p={0}>
-      <Flex style={{ height: CARD_HEIGHT }}>
+      <Flex>
         <TextContainer>
           <span>
             <Title my={2} pb={1}>
