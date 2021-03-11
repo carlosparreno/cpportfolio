@@ -30,7 +30,7 @@ socialLinks:
       id: 'sociallink-medium',
       fontAwesomeIcon: 'medium',
       name: 'Medium',
-      url: 'https://medium.com/@carlos.parreno',
+      url: 'https://carlos-parreno.medium.com/',
       enabled: true,
     },
     {
