@@ -6,13 +6,25 @@ excerpt: 'This is my professional career info'
 works:
   [
     {
+      id: 'career-merative-spm',
+      name: 'Senior Software Engineer',
+      description: "### Merative: Social Program Manager
+        \n\n **Company:** Merative Healthcare Ireland
+        \n\n **Purpose:** Create modern, well-architected, localizable and maintainable Government solutions to improve the value of health and human services of our Government customers.
+        \n\n **React** | **Redux** | **Flow** | **Jest** | **Puppeteer**",
+      period: 'October 2022 - Present',
+      type: 'work',
+      company: 'IBM Dublin',
+      logo: { title: 'merative healthcare image', src: '/merative.png' },
+    },
+    {
       id: 'career-ibm-watson-health',
       name: 'Senior Software Engineer',
       description: "### IBM Watson Health: Government
         \n\n **Company:** IBM Ireland
         \n\n **Purpose:** Create modern, well-architected, localizable and maintainable Government solutions to improve the value of health and human services of our Government customers.
         \n\n **React** | **Redux** | **Flow** | **Jest** | **Puppeteer**",
-      period: 'June 2017 - Present',
+      period: 'June 2017 - September 2022',
       type: 'work',
       company: 'IBM Dublin',
       logo: { title: 'watson health image', src: '/ibm-watson-health2.jpg' },
