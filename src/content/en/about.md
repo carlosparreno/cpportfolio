@@ -7,7 +7,7 @@ aboutMe: "Hello 👋 I’m Carlos Parreño. I was born in Spain 🇪🇸 where I
 
 \n\nI’m a Software Engineer 👨🏻‍💻 with a Bachelor and Master Degree in Computer Science that I acquired in the University of Huelva (Spain) and the University of Stavanger (Norway).
 
-\n\nMy professional career started in IBM Belgium, where I had a year internship. Things went well 🎉and I moved to IBM Ireland in Dublin, where the European Technology Campus is located 🏰.
+\n\nMy professional career started in IBM Belgium, where I had a year internship. Things went well 🎉 and I moved to IBM Ireland in Dublin, where the European Technology Campus is located 🏰. I worked there until 2022 when my former team IBM Watson Health became an independent company called Merative, where I'm currently working.
 
 \n\nI’m a passionate Front-Ender 🤟 who loves building modern and fast web applications, I am an ambitious learner always keen to keep up with the latest advancements. I enjoy working with tech-lovers whom I learn tones from and share my expertise with.
 
