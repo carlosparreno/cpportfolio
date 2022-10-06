@@ -59,7 +59,7 @@ works:
       description: "### IBM XPages
         \n\n **Compañía:** IBM Irlanda
         \n\n **Propósito:** Proporcionar un framework de rápido desarrollo web orientado a componentes que permita que los datos de IBM Notes y las bases de datos relacionales se muestren en todos los navegador y plataformas.
-        \n\n **JS** | **Java** | **CSS** | **Dojo** | **XML**,
+        \n\n **JS** | **Java** | **CSS** | **Dojo** | **XML**",
       period: 'Noviembre 2013 - Febrero 2014',
       type: 'work',
       company: 'IBM Dublin',
