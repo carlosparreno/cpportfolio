@@ -6,7 +6,7 @@ excerpt: 'Este es el proyecto de mi porftolio'
 roles:
   [
     'Ingeniero de Software 👨🏻‍💻',
-    'En IBM Watson Health 💙',
+    'En Merative 💙',
     'De España 🇪🇸',
     'Viviendo en Dublin 🇮🇪',
   ]
