@@ -7,7 +7,7 @@ aboutMe: "Hola 👋 soy Carlos Parreño. Nací en España 🇪🇸 donde me cri�
 
 \n\nSoy Ingeniero de Software 👨🏻‍💻 con una Ingeniería Técnica y Superior en Informatica que adquirí en la Universidad de Huelva (España) y la Universidad de Stavanger (Noruega).
 
-\n\nMi carrera profesional empezó en IBM Bélgica, donde tuve unas prácticas de un año. Las cosas fueron bien y acabé en IBM Irlanda, donde está el Campus Tecnológico de Europa 🏰.
+\n\nMi carrera profesional empezó en IBM Bélgica, donde tuve unas prácticas de un año. Las cosas fueron bien y acabé en IBM Irlanda, donde está el Campus Tecnológico de Europa 🏰. Trabajé ahí hasta 2022 cuando me antiguo equipo IBM Watson Health se convirtió en una empresa independiente llamada Merative, donde trabajo en la actualidad.
 
 \n\nSoy un apasionado Front-Ender 🤟 al que le encanta crear aplicaciones web modernas y rápidas, soy ambicioso en cuanto al aprendizaje, siempre dispuesto a mantenerme al día con los últimos avances. Disfruto trabajando con amantes de la tecnología de los que aprendo mucho y con los que comparto mis conocimientos.
 
