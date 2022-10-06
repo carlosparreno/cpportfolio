@@ -6,13 +6,25 @@ excerpt: 'Esta es la información de mi carrera profesional'
 works:
   [
     {
+      id: 'career-merative-spm',
+      name: 'Ingeniero Senior de Software',
+      description: "### Merative: Social Program Manager
+        \n\n **Company:** Merative Healthcare Ireland
+        \n\n **Purpose:** Crear aplicaciones modernas, bien estructuradas, localizables y mantenibles para mejorar la calidad de la sanidad y servicios humanos de nuestros clientes gubernamentales.
+        \n\n **React** | **Redux** | **React Testing Library**| **SaSS**",
+      period: 'October 2022 - Present',
+      type: 'work',
+      company: 'Merative',
+      logo: { title: 'merative healthcare image', src: '/merative.png' },
+    },
+    {
       id: 'career-ibm-watson-health',
       name: 'Ingeniero Front End',
       description: "### IBM Watson Health: Gobiernos
         \n\n **Compañía:** IBM Irlanda
         \n\n **Propósito:** Crear aplicaciones modernas, bien estructuradas, localizables y mantenibles para mejorar la calidad de la sanidad y servicios humanos de nuestros clientes gubernamentales.
         \n\n **React** | **Redux** | **Flow** | **Jest** | **Puppeteer**",
-      period: 'Junio 2017 - Presente',
+      period: 'Junio 2017 - Septiembre 2022',
       type: 'work',
       company: 'IBM Dublin',
       logo: { title: 'watson health image', src: '/ibm-watson-health2.jpg' },
