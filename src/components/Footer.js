@@ -26,7 +26,7 @@ const Footer = () => (
             display: 'table',
           }}
         >
-          Carlos Parreño Ⓡ 2021
+          Carlos Parreño Ⓡ 2022
         </Text>
       </span>
     </Fade>
