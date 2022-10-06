@@ -14,7 +14,7 @@ works:
         \n\n **React** | **Redux** | **Flow** | **Jest** | **Puppeteer**",
       period: 'October 2022 - Present',
       type: 'work',
-      company: 'IBM Dublin',
+      company: 'Merative',
       logo: { title: 'merative healthcare image', src: '/merative.png' },
     },
     {
